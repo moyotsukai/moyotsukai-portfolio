@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Noto Sans JP;
+  font-weight: 400;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: Noto Sans JP;
+  font-size: 12pt;
+  font-weight: 400;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  font-family: Noto Sans JP;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
