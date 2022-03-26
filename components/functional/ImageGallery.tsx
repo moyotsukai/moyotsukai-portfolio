@@ -15,9 +15,9 @@ const ImageGallery: React.FC<Props> = (props) => {
     <div css={layoutStyle}>
       <ScrollContainer vertical={false} horizontal={true} hideScrollbars={false} activationDistance={1}>
         {props.images.map((item, index) => (
-          <div css={groupStyle} >
+          <div css={groupStyle} key={index}>
             <div css={imageContainerStyle}>
-              <Image src={item.src} width={350} height={350} alt="" key={index} />
+              <Image src={item.src} width={350} height={350} alt="" />
             </div>
             <SupportingText>{item.title}</SupportingText>
             <Spacer size={10} />
