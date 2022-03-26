@@ -17,7 +17,7 @@ const Spacer: React.FC<Props> = (props) => {
 }
 
 const spacerStyle = (isInlineStyle: boolean, x: number, y: number) => css`
-  display: ${isInlineStyle ? "inline" : "block"};
+  display: ${isInlineStyle ? "inline-block" : "block"};
   width: ${x}px;
   height: ${y}px;
 `

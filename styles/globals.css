@@ -10,6 +10,10 @@ body {
 *:before,
 *:after {
   box-sizing: border-box;
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
 }
 
 *:focus {
@@ -20,14 +24,16 @@ p {
   margin: 0;
   padding: 0;
   font-family: Noto Sans JP;
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: 400;
   color: #000;
+  line-height: 1.7;
 }
 
 a {
   text-decoration: none;
   font-family: Noto Sans JP;
+  font-size: 16px;
 }
 
 ul {

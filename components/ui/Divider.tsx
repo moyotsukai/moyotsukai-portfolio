@@ -8,8 +8,12 @@ const Divider: React.FC = () => {
   )
 }
 const dividerStyle = css`
-  margin: 0 8px;
   border-bottom: solid 1px ${dividerColor};
+  margin: 0 10px;
+
+  @media(min-width: 600px) {
+    margin: 0 20px;
+  }
 `
 
 export default Divider

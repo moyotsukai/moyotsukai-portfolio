@@ -34,7 +34,7 @@ const titleStyle = css`
   margin: 15px 0;
 `
 const subtitleStyle = css`
-  font-size: 18px;
+  font-size: 19px;
   margin: 15px 0;
 `
 

@@ -3,7 +3,7 @@ import { css } from '@emotion/react'
 import { motion } from 'framer-motion'
 import Divider from './Divider'
 import ToggleMarker from './ToggleMarker'
-import { primaryBackgroundColor, primaryColor } from '../../styles/colors'
+import { dividerColor, primaryHeighlightColor } from '../../styles/colors'
 
 type Props = {
   title: string
@@ -59,32 +59,37 @@ const Accordion: React.FC<Props> = (props) => {
         css={detailContainerStyle}
       >
         <Divider />
-        {props.children}
+        <div css={detailStyle}>
+          {props.children}
+        </div>
       </motion.div>
     </div>
   )
 }
 
 const accordionStyle = css`
-  background-color: ${primaryBackgroundColor};
+  background-color: #fff;
   margin: 0 auto;
   max-width: 800px;
-  padding: 15px 5px;
-  border: solid 1.5px ${primaryColor};
-  border-radius: 12px;
   text-align: center;
-  @media(min-width: 500px) {
-    padding: 15px 10px;
-  }
+  border: solid 1px ${dividerColor};
+  border-radius: 12px;
+  overflow: hidden;
 `
 const summaryContainerStyle = css`
   display: flex;
   align-items: center;
   border: none;
   cursor: pointer;
-  background-color: ${primaryBackgroundColor};
-  -webkit-tap-highlight-color: #000;
+  background-color: #fff;
+  -webkit-tap-highlight-color: ${primaryHeighlightColor};
   width: 100%;
+  padding: 15px 15px;
+
+  @media(min-width: 600px) {
+    padding: 15px 25px;
+  }
+
   &:focus {
     outline: none;
   }
@@ -93,11 +98,18 @@ const titleContainerStyle = css`
   flex-grow: 1;
 `
 const titleStyle = css`
-  font-size: 18px;
+  font-size: 19px;
   text-align: left;
 `
 const detailContainerStyle = css`
   overflow: hidden;
 `
+const detailStyle = css`
+  padding: 15px 15px;
+  text-align: left;
 
+   @media(min-width: 600px) {
+    padding: 15px 25px;
+  }
+`
 export default Accordion
