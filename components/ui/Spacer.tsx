@@ -2,24 +2,31 @@ import React from 'react'
 import { css } from '@emotion/react'
 
 type Props = {
-  x?: number,
-  y?: number
+  size: number
+  isVertical?: boolean
 }
 
 const Spacer: React.FC<Props> = (props) => {
-  const isInlineStyle = props.x ? true : false
-  const x = props.x ?? 0
-  const y = props.y ?? 0
+  const isVertical = props.isVertical ?? true
 
-  return (
-    <div css={() => spacerStyle(isInlineStyle, x, y)} />
-  )
+  if (isVertical) {
+    return (
+      <div css={() => verticalSpacerStyle(props.size)} />
+    )
+  } else {
+    return (
+      <div css={() => horizontalSpacerStyle(props.size)} />
+    )
+  }
 }
 
-const spacerStyle = (isInlineStyle: boolean, x: number, y: number) => css`
-  display: ${isInlineStyle ? "inline-block" : "block"};
-  width: ${x}px;
-  height: ${y}px;
+const verticalSpacerStyle = (size: number) => css`
+  display: block;
+  height: ${size}px;
+`
+const horizontalSpacerStyle = (size: number) => css`
+  display: inline-block;
+  width: ${size}px;
 `
 
 export default Spacer

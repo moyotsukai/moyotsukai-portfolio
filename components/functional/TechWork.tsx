@@ -17,10 +17,10 @@ const TechWork: React.FC<Props> = (props) => {
         <div css={imageContainerStyle}>
           <Image src={props.imgSrc} width={50} height={50} />
         </div>
-        <Spacer x={10} />
+        <Spacer size={10} isVertical={false} />
         <p css={titleStyle}>{props.title}</p>
       </div>
-      <Spacer y={5} />
+      <Spacer size={5} />
       {props.children}
     </div>
   )

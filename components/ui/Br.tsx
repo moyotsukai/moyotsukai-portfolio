@@ -9,11 +9,11 @@ const Br: React.FC<Props> = (props) => {
   const style = props.style || "small"
   if (style === "small") {
     return (
-      <Spacer y={15} />
+      <Spacer size={15} />
     )
   } else {
     return (
-      <Spacer y={30} />
+      <Spacer size={30} />
     )
   }
 }

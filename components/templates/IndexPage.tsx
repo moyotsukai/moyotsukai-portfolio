@@ -8,10 +8,52 @@ import Br from '../ui/Br'
 import Jump from '../ui/Jump'
 import TechWork from '../functional/TechWork'
 import SupportingText from '../ui/SupportingText'
+import { ImageItem } from '../../types/ImageItem.type'
+import ImageGallery from '../functional/ImageGallery'
+import Seo from '../common/Seo'
+
+const moyotsukaiImages: ImageItem[] = [
+  {
+    title: "『循環』 紙 140cm×140cm",
+    src: "/tech/cycle.jpeg"
+  },
+  {
+    title: "カブトガニ",
+    src: "/tech/horseshoecrab.jpg"
+  },
+  {
+    title: "マイマイカブリ",
+    src: "/tech/maimaikaburi.jpg"
+  },
+  {
+    title: "カメノコテントウ",
+    src: "/tech/kamenokotentou.jpg"
+  }
+]
+
+const tentouyaImages: ImageItem[] = [
+  {
+    title: "テントウトランプ",
+    src: "/tech/tentouplayingcards.jpg"
+  },
+  {
+    title: "Tシャツ",
+    src: "/tech/tshirt.jpg"
+  },
+  {
+    title: "テントウダイス",
+    src: "/tech/tentoudice.jpg"
+  },
+  {
+    title: "絵はがき",
+    src: "/tech/postcard.jpg"
+  },
+]
 
 const IndexPage: React.FC = () => {
   return (
     <div css={layoutStyle}>
+      <Seo />
       <Hero />
 
       {/* Tech */}
@@ -22,7 +64,7 @@ const IndexPage: React.FC = () => {
             <Jump href="https://eraberule.com">
               eraberule.com
             </Jump>
-            <Spacer y={5} />
+            <Spacer size={5} />
             <p>
               経済学的に望ましいとされる投票ルールを実験的に用いることができる投票アプリ。
               社会的選択理論の社会実装を目的としたWebアプリとしては国内初。
@@ -43,7 +85,7 @@ const IndexPage: React.FC = () => {
             <Jump href="https://color.moyotsukai.dev">
               color.moyotsukai.dev
             </Jump>
-            <Spacer y={5} />
+            <Spacer size={5} />
             <p>
               Hex, RGBAなど５つの形式に相互に対応したカラー変換ツール。
               一覧性が高く、カラーを編集すると他のカラーモードの値がレスポンシブに更新される。
@@ -62,7 +104,7 @@ const IndexPage: React.FC = () => {
             <Jump href="https://tentouya.com">
               tentouya.com
             </Jump>
-            <Spacer y={5} />
+            <Spacer size={5} />
             <p>
               自分達の運営する昆虫グッズブランドのホームページ。
             </p>
@@ -80,7 +122,7 @@ const IndexPage: React.FC = () => {
             <Jump href="https://apps.apple.com/us/app/bycolor-sort-photos-by-color/id1498754477">
               App Store
             </Jump>
-            <Spacer y={5} />
+            <Spacer size={5} />
             <p>
               写真を色で分類するという視点を提案するiOSアプリ。
             </p>
@@ -98,7 +140,7 @@ const IndexPage: React.FC = () => {
             <Jump href="https://apps.apple.com/us/app/cameralayer-translucent-screen/id1502882036">
               App Store
             </Jump>
-            <Spacer y={5} />
+            <Spacer size={5} />
             <p>
               アルバムにある写真を半透明に重ねて写真撮影ができるiOSアプリ。
             </p>
@@ -116,7 +158,7 @@ const IndexPage: React.FC = () => {
             <Jump href="https://apps.apple.com/jp/app/eraberule/id1552835670">
               App Store
             </Jump>
-            <Spacer y={5} />
+            <Spacer size={5} />
             <p>
               ErabeRuleのiOS版アプリ。
             </p>
@@ -129,13 +171,44 @@ const IndexPage: React.FC = () => {
           </TechWork>
         </div>
       </Accordion>
-      <Spacer y={30} />
+      <Spacer size={30} />
 
       {/* Art */}
       <Accordion title="作品 - Art">
-        さくひん
+        <div>
+          {/* もようつかい */}
+          <TechWork title="もようつかい" imgSrc="/tech/moyotsukai.png">
+            <Jump href="https://twitter.com/moyotsukai">
+              Twitter
+            </Jump>
+            <Spacer size={5} />
+            <p>
+              「もようつかい」として紙で立体作品を作っています。
+              主に昆虫など生き物のペーパークラフトを開発しています。
+              「てんとうや」で販売したり、大学の文化祭に出品したりしています。
+              母校から依頼を受け、永久展示もしています。
+            </p>
+            <Spacer size={5} />
+            <ImageGallery images={moyotsukaiImages} />
+          </TechWork>
+          <Br style="large" />
+
+          {/* てんとうや */}
+          <TechWork title="てんとうや" imgSrc="/tech/tentouya.png">
+            <Jump href="https://tentouya.com">
+              tentouya.com
+            </Jump>
+            <Spacer size={5} />
+            <p>
+              兄弟で、昆虫のユニークなデザインを活かしたグッズを制作・販売しています。
+              ネットでの販売に加え、イベントにも出展しています。
+            </p>
+            <Spacer size={5} />
+            <ImageGallery images={tentouyaImages} />
+          </TechWork>
+        </div>
       </Accordion>
-      <Spacer y={30} />
+      <Spacer size={30} />
 
       {/* About */}
       <Accordion title="About">
@@ -151,21 +224,21 @@ const IndexPage: React.FC = () => {
           <p>リンク</p>
           <p>
             Twitter:
-            <Spacer x={5} />
+            <Spacer size={5} isVertical={false} />
             <Jump href="https://twitter.com/moyotsukai">
               @moyotsukai
             </Jump>
           </p>
           <p>
             Zenn:
-            <Spacer x={5} />
+            <Spacer size={5} isVertical={false} />
             <Jump href="https://zenn.dev/moyotsukai">
               @moyotsukai
             </Jump>
           </p>
         </div>
       </Accordion>
-      <Spacer y={30} />
+      <Spacer size={30} />
     </div>
   )
 }
