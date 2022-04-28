@@ -47,7 +47,22 @@ const tentouyaImages: ImageItem[] = [
   {
     title: "絵はがき",
     src: "/tech/postcard.jpg"
+  }
+]
+
+const highSchoolImages: ImageItem[] = [
+  {
+    title: "スクラッチのお皿",
+    src: "/tech/okinawachoutonbo.jpg"
   },
+  {
+    title: "スクラッチのお皿",
+    src: "/tech/youjiuo.jpg"
+  },
+  {
+    title: "花器を制作",
+    src: "/tech/ikebana.jpg"
+  }
 ]
 
 const IndexPage: React.FC = () => {
@@ -205,6 +220,17 @@ const IndexPage: React.FC = () => {
             </p>
             <Spacer size={5} />
             <ImageGallery images={tentouyaImages} />
+          </TechWork>
+          <Br style="large" />
+
+          {/* 中学・高校の時の作品 */}
+          <TechWork title="中学・高校の時" imgSrc="/tech/moyotsukai.png">
+            <Spacer size={5} />
+            <p>
+              中学生・高校生の時に作った作品です。
+            </p>
+            <Spacer size={5} />
+            <ImageGallery images={highSchoolImages} />
           </TechWork>
         </div>
       </Accordion>
