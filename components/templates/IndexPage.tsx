@@ -22,6 +22,10 @@ const moyotsukaiImages: ImageItem[] = [
     src: "/tech/horseshoecrab.jpg"
   },
   {
+    title: "オオセンチコガネ",
+    src: "/tech/oosenchi.jpg"
+  },
+  {
     title: "マイマイカブリ",
     src: "/tech/maimaikaburi.jpg"
   },
@@ -200,7 +204,7 @@ const IndexPage: React.FC = () => {
             <p>
               「もようつかい」として紙で立体作品を作っています。
               主に昆虫など生き物のペーパークラフトを開発しています。
-              「てんとうや」で販売したり、大学の文化祭に出品したりしています。
+              「てんとうや」で販売したり、展覧会に出品したりしています。
               母校から依頼を受け、永久展示もしています。
             </p>
             <Spacer size={5} />
