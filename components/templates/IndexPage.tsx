@@ -245,15 +245,27 @@ const IndexPage: React.FC = () => {
         <div>
           <p>青井新太郎</p>
           <p>2003年生まれ</p>
+          <p>Life is Tech ! iPhoneメンター</p>
           <Br />
-          <p>デザイン、アート、プログラミング</p>
+
+          <SupportingText>好きなこと</SupportingText>
+          <p>デザイン(UIデザイン, Webデザイン, タイポグラフィ)</p>
+          <p>アート(ペーパークラフト開発, 生け花)</p>
+          <p>プログラミング(Webフロントエンド, iOSアプリ)</p>
           <Br />
-          <p>スキル</p>
+
+          <SupportingText>スキル</SupportingText>
           <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Rhinoceros</p>
           <Br />
-          <p>リンク</p>
+        </div>
+      </Accordion>
+      <Spacer size={30} />
+
+      {/* リンク */}
+      <Accordion title="リンク">
+        <div>
           <p>
-            Twitter:
+            Twitter(メイン):
             <Spacer size={5} isVertical={false} />
             <Jump href="https://twitter.com/moyotsukai">
               @moyotsukai
@@ -264,6 +276,20 @@ const IndexPage: React.FC = () => {
             <Spacer size={5} isVertical={false} />
             <Jump href="https://zenn.dev/moyotsukai">
               @moyotsukai
+            </Jump>
+          </p>
+          <p>
+            てんとうや:
+            <Spacer size={5} isVertical={false} />
+            <Jump href="https://tentouya.com">
+              tentouya.com
+            </Jump>
+          </p>
+          <p>
+            てんとうやTwitter:
+            <Spacer size={5} isVertical={false} />
+            <Jump href="https://twitter.com/tentouya64">
+              @tentouya64
             </Jump>
           </p>
         </div>
