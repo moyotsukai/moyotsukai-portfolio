@@ -248,22 +248,7 @@ const IndexPage: React.FC = () => {
           <p>Life is Tech ! iPhoneメンター</p>
           <Br />
 
-          <SupportingText>好きなこと</SupportingText>
-          <p>デザイン(UIデザイン, Webデザイン, タイポグラフィ)</p>
-          <p>アート(ペーパークラフト開発, 生け花)</p>
-          <p>プログラミング(Webフロントエンド, iOSアプリ)</p>
-          <Br />
-
-          <SupportingText>スキル</SupportingText>
-          <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Rhinoceros</p>
-          <Br />
-        </div>
-      </Accordion>
-      <Spacer size={30} />
-
-      {/* リンク */}
-      <Accordion title="リンク">
-        <div>
+          <SupportingText>SNS</SupportingText>
           <p>
             Twitter(メイン):
             <Spacer size={5} isVertical={false} />
@@ -279,19 +264,22 @@ const IndexPage: React.FC = () => {
             </Jump>
           </p>
           <p>
-            てんとうや:
-            <Spacer size={5} isVertical={false} />
-            <Jump href="https://tentouya.com">
-              tentouya.com
-            </Jump>
-          </p>
-          <p>
             てんとうやTwitter:
             <Spacer size={5} isVertical={false} />
             <Jump href="https://twitter.com/tentouya64">
               @tentouya64
             </Jump>
           </p>
+          <Br />
+
+          <SupportingText>好きなこと</SupportingText>
+          <p>デザイン(UIデザイン, Webデザイン, タイポグラフィ)</p>
+          <p>アート(ペーパークラフト開発, 生け花)</p>
+          <p>プログラミング(Webフロントエンド, iOSアプリ)</p>
+          <Br />
+
+          <SupportingText>スキル</SupportingText>
+          <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Rhinoceros</p>
         </div>
       </Accordion>
       <Spacer size={30} />
