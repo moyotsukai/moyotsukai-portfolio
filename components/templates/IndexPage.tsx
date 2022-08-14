@@ -244,42 +244,59 @@ const IndexPage: React.FC = () => {
       <Accordion title="About">
         <div>
           <p>青井新太郎</p>
-          <p>2003年生まれ</p>
-          <p>Life is Tech ! iPhoneメンター</p>
           <Br />
 
-          <SupportingText>SNS</SupportingText>
-          <p>
-            Twitter(メイン):
-            <Spacer size={5} isVertical={false} />
-            <Jump href="https://twitter.com/moyotsukai">
-              @moyotsukai
-            </Jump>
-          </p>
-          <p>
-            Zenn:
-            <Spacer size={5} isVertical={false} />
-            <Jump href="https://zenn.dev/moyotsukai">
-              @moyotsukai
-            </Jump>
-          </p>
-          <p>
-            てんとうやTwitter:
-            <Spacer size={5} isVertical={false} />
-            <Jump href="https://twitter.com/tentouya64">
-              @tentouya64
-            </Jump>
-          </p>
+          <SupportingText>リンク</SupportingText>
+          <div>
+            <p>
+              Twitter(メイン):
+              <Spacer size={5} isVertical={false} />
+              <Jump href="https://twitter.com/moyotsukai">
+                @moyotsukai
+              </Jump>
+            </p>
+            <p>
+              GitHub:
+              <Spacer size={5} isVertical={false} />
+              <Jump href="https://github.com/Shinchan-git">
+                Shinchan-git
+              </Jump>
+            </p>
+            <p>
+              Zenn:
+              <Spacer size={5} isVertical={false} />
+              <Jump href="https://zenn.dev/moyotsukai">
+                @moyotsukai
+              </Jump>
+            </p>
+            <p>
+              てんとうやTwitter:
+              <Spacer size={5} isVertical={false} />
+              <Jump href="https://twitter.com/tentouya64">
+                @tentouya64
+              </Jump>
+            </p>
+          </div>
           <Br />
 
-          <SupportingText>好きなこと</SupportingText>
-          <p>デザイン(UIデザイン, Webデザイン, タイポグラフィ)</p>
-          <p>アート(ペーパークラフト開発, 生け花)</p>
-          <p>プログラミング(Webフロントエンド, iOSアプリ)</p>
+          <SupportingText>興味</SupportingText>
+          <div>
+            <p>デザイン(UIデザイン, Webデザイン, タイポグラフィ)</p>
+            <p>アート(ペーパークラフト開発, 生け花)</p>
+            <p>プログラミング(Webフロントエンド, iOSアプリ)</p>
+          </div>
           <Br />
 
           <SupportingText>スキル</SupportingText>
-          <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Rhinoceros</p>
+          <div>
+            <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Rhinoceros</p>
+          </div>
+          <Br />
+
+          <div>
+            <p>2003年生まれ</p>
+            <p>2022- Life is Tech ! iPhoneメンター</p>
+          </div>
         </div>
       </Accordion>
       <Spacer size={30} />
