@@ -263,6 +263,13 @@ const IndexPage: React.FC = () => {
               </Jump>
             </p>
             <p>
+              Qiita:
+              <Spacer size={5} isVertical={false} />
+              <Jump href="https://qiita.com/oishin">
+                @oishin
+              </Jump>
+            </p>
+            <p>
               Zenn:
               <Spacer size={5} isVertical={false} />
               <Jump href="https://zenn.dev/moyotsukai">
