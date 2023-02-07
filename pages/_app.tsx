@@ -1,13 +1,13 @@
-import React from 'react'
 import Footer from '../components/common/Footer'
+import Layout from '../components/common/Layout'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <React.Fragment>
+    <Layout>
       <Component {...pageProps} />
       <Footer />
-    </React.Fragment>
+    </Layout>
   )
 }
 
