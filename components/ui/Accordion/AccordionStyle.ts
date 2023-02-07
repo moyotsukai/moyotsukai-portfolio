@@ -1,5 +1,7 @@
 import { css, keyframes } from '@emotion/react'
 
+const breakpoint = "420px"
+
 export const rootStyle = css`
   max-width: 800px;
   margin: 0 auto;
@@ -25,6 +27,11 @@ export const triggerStyle = css`
   text-align: left;
   display: flex;
   justify-content: space-between;
+
+  @media(max-width: ${breakpoint}) {
+    padding: 15px 15px;
+  }
+
   &:hover {
     cursor: pointer;
     background-color: #f7fbfc;
@@ -93,4 +100,8 @@ export const contentStyle = css`
 
 export const contentInsetStyle = css`
   padding: 0 25px;
+
+    @media(max-width: ${breakpoint}) {
+    padding: 0 15px;
+  }
 `
