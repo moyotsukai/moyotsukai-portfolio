@@ -302,8 +302,8 @@ const IndexPage: React.FC = () => {
               <p>
                 GitHub:
                 <Spacer size={5} isVertical={false} />
-                <Jump href="https://github.com/Shinchan-git">
-                  Shinchan-git
+                <Jump href="https://github.com/moyotsukai">
+                  moyotsukai
                 </Jump>
               </p>
               <p>
