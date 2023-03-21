@@ -19,9 +19,11 @@ const ImageGallery: React.FC<Props> = (props) => {
             <div css={imageContainerStyle}>
               <Image src={item.src} width={350} height={350} alt="" />
             </div>
-            <SupportingText>
-              {item.title}
-            </SupportingText>
+            <div css={textContainerStyle}>
+              <SupportingText>
+                {item.title}
+              </SupportingText>
+            </div>
             <Spacer size={10} />
           </div>
         ))}
@@ -40,11 +42,14 @@ const imageItemStyle = css`
   width: 90%;
   max-width: 350px;
   vertical-align: top;
+  border: solid 1px #fff;
 `
 const imageContainerStyle = css`
   max-width: 350px;
   max-height: 350px;
-  border: solid 1px #fff;
+`
+const textContainerStyle = css`
+  padding-right: 6px;
 `
 
 export default ImageGallery

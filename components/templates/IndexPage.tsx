@@ -21,7 +21,7 @@ const moyotsukaiImages_1: ImageItem[] = [
     src: "/tech/stride_1.jpg"
   },
   {
-    title: "",
+    title: "ヤドカリが一歩一歩進んでいき、時間と共に平面から立体へと進展していきます。",
     src: "/tech/stride_2.jpg"
   },
   {
@@ -51,7 +51,7 @@ const moyotsukaiImages_2: ImageItem[] = [
 
 const tentouyaImages: ImageItem[] = [
   {
-    title: "テントウトランプ",
+    title: "テントウトランプ　トランプの数字とテントウムシの模様が対応しています！",
     src: "/tech/tentouplayingcards.jpg"
   },
   {
@@ -59,7 +59,7 @@ const tentouyaImages: ImageItem[] = [
     src: "/tech/tshirt.jpg"
   },
   {
-    title: "テントウダイス",
+    title: "テントウダイス　1〜6の目を実際のテントウムシの模様で表したダイス",
     src: "/tech/tentoudice.jpg"
   },
   {
