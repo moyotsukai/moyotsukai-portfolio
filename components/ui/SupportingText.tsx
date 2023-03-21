@@ -6,10 +6,10 @@ type Props = {
   children: React.ReactNode
 }
 
-const SupportingText: React.FC<Props> = (props) => {
+const SupportingText: React.FC<Props> = ({ children }: Props) => {
   return (
     <p css={supportingTextStyle}>
-      {props.children}
+      {children}
     </p>
   )
 }
@@ -17,6 +17,8 @@ const SupportingText: React.FC<Props> = (props) => {
 const supportingTextStyle = css`
   color: ${supportingTextColor};
   font-size: 15px;
+  white-space: normal;
+  line-height: 1.4;
 `
 
 export default SupportingText

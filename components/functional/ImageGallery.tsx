@@ -12,14 +12,16 @@ type Props = {
 
 const ImageGallery: React.FC<Props> = (props) => {
   return (
-    <div css={layoutStyle}>
+    <div css={imageGalleryStyle}>
       <ScrollContainer vertical={false} horizontal={true} hideScrollbars={false} activationDistance={1}>
         {props.images.map((item, index) => (
-          <div css={groupStyle} key={index}>
+          <div css={imageItemStyle} key={index}>
             <div css={imageContainerStyle}>
               <Image src={item.src} width={350} height={350} alt="" />
             </div>
-            <SupportingText>{item.title}</SupportingText>
+            <SupportingText>
+              {item.title}
+            </SupportingText>
             <Spacer size={10} />
           </div>
         ))}
@@ -28,19 +30,21 @@ const ImageGallery: React.FC<Props> = (props) => {
   )
 }
 
-const layoutStyle = css`
+const imageGalleryStyle = css`
   overflow-x: scroll;
   white-space: nowrap;
   cursor: pointer;
 `
-const groupStyle = css`
+const imageItemStyle = css`
   display: inline-block;
   width: 90%;
   max-width: 350px;
+  vertical-align: top;
 `
 const imageContainerStyle = css`
   max-width: 350px;
   max-height: 350px;
+  border: solid 1px #fff;
 `
 
 export default ImageGallery

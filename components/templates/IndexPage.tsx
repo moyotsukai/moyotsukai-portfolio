@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from '@emotion/react'
-import { primaryBackgroundColor } from '../../styles/colors'
 import Spacer from '../ui/Spacer'
 import Hero from '../functional/Hero'
 import Br from '../ui/Br'
@@ -12,18 +11,33 @@ import ImageGallery from '../functional/ImageGallery'
 import Seo from '../common/Seo'
 import Accordion from '../ui/Accordion'
 
-const moyotsukaiImages: ImageItem[] = [
+const moyotsukaiImages_1: ImageItem[] = [
   {
-    title: "『循環』 紙 140cm×140cm",
+    title: "『循環』 紙 140cm×140cm　無限に流れる生命の循環のワンシーンを切り出しました。",
     src: "/tech/cycle.jpeg"
+  },
+  {
+    title: "《Stride》 紙 42cm×91cm",
+    src: "/tech/stride_1.jpg"
+  },
+  {
+    title: "",
+    src: "/tech/stride_2.jpg"
+  },
+  {
+    title: "『再帰』 紙 140cm×140cm",
+    src: "/tech/reccurence.png"
+  },
+]
+
+const moyotsukaiImages_2: ImageItem[] = [
+  {
+    title: "オオセンチコガネ",
+    src: "/tech/oosenchi.jpg"
   },
   {
     title: "カブトガニ",
     src: "/tech/horseshoecrab.jpg"
-  },
-  {
-    title: "オオセンチコガネ",
-    src: "/tech/oosenchi.jpg"
   },
   {
     title: "マイマイカブリ",
@@ -56,6 +70,10 @@ const tentouyaImages: ImageItem[] = [
 
 const highSchoolImages: ImageItem[] = [
   {
+    title: "生け花",
+    src: "/tech/ikebana.png"
+  },
+  {
     title: "スクラッチのお皿",
     src: "/tech/okinawachoutonbo.jpg"
   },
@@ -83,6 +101,7 @@ const IndexPage: React.FC = () => {
           <Accordion.Trigger>
             作品 - Tech
           </Accordion.Trigger>
+
           <Accordion.Content>
             {/* ErabeRule */}
             <TechWork title="ErabeRule" imgSrc="/tech/eraberule.png">
@@ -101,6 +120,26 @@ const IndexPage: React.FC = () => {
               </SupportingText>
               <SupportingText>
                 - Firebase, Next.js, Recoil, Emotion, Vercel
+              </SupportingText>
+            </TechWork>
+            <Br style="large" />
+
+            {/* @moyotsukai/bezier */}
+            <TechWork title="@moyotsukai/bezier" imgSrc="/tech/color-converter.png">
+              <Jump href="https://www.npmjs.com/package/@moyotsukai/bezier">
+                @moyotsukai/bezier
+              </Jump>
+              <Spacer size={5} />
+              <p>
+                コードでベジェ曲線を描画するライブラリ。
+                ベジェ曲線の直感的な定義方法を考案し、３通りのパラメータを使って曲線を生成できるnpmパッケージ。
+                ペーパークラフトの展開図などをコードで管理することを目的としている。
+              </p>
+              <SupportingText>
+                - 企画・実装
+              </SupportingText>
+              <SupportingText>
+                - TypeScript
               </SupportingText>
             </TechWork>
             <Br style="large" />
@@ -248,7 +287,9 @@ const IndexPage: React.FC = () => {
                 母校から依頼を受け、永久展示もしています。
               </p>
               <Spacer size={5} />
-              <ImageGallery images={moyotsukaiImages} />
+              <ImageGallery images={moyotsukaiImages_1} />
+              <Br style="small" />
+              <ImageGallery images={moyotsukaiImages_2} />
             </TechWork>
             <Br style="large" />
 
@@ -267,12 +308,8 @@ const IndexPage: React.FC = () => {
             </TechWork>
             <Br style="large" />
 
-            {/* 中学・高校の時の作品 */}
-            <TechWork title="中学・高校の時" imgSrc="/tech/moyotsukai.png">
-              <Spacer size={5} />
-              <p>
-                中学生・高校生の時に作った作品です。
-              </p>
+            {/* その他 */}
+            <TechWork title="その他" imgSrc="/tech/moyotsukai.png">
               <Spacer size={5} />
               <ImageGallery images={highSchoolImages} />
             </TechWork>
