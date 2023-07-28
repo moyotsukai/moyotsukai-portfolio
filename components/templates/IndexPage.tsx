@@ -13,7 +13,7 @@ import Accordion from '../ui/Accordion'
 
 const moyotsukaiImages_1: ImageItem[] = [
   {
-    title: "『循環』 紙 140cm×140cm　無限に流れる生命の循環のワンシーンを切り出しました。",
+    title: "『循環』 紙 140cm×140cm / 無限に流れる生命の循環のワンシーンを切り出しました。",
     src: "/tech/cycle.jpeg"
   },
   {
@@ -51,7 +51,7 @@ const moyotsukaiImages_2: ImageItem[] = [
 
 const tentouyaImages: ImageItem[] = [
   {
-    title: "テントウトランプ　トランプの数字とテントウムシの模様が対応しています！",
+    title: "テントウトランプ / トランプの数字とテントウムシの模様が対応しています。",
     src: "/tech/tentouplayingcards.jpg"
   },
   {
@@ -59,7 +59,7 @@ const tentouyaImages: ImageItem[] = [
     src: "/tech/tshirt.jpg"
   },
   {
-    title: "テントウダイス　1〜6の目を実際のテントウムシの模様で表したダイス",
+    title: "テントウダイス / 1〜6の目を実際のテントウムシの模様で表したダイス",
     src: "/tech/tentoudice.jpg"
   },
   {
@@ -99,7 +99,7 @@ const IndexPage: React.FC = () => {
 
         <Accordion.Item value="item-tech">
           <Accordion.Trigger>
-            作品 - Tech
+            Software
           </Accordion.Trigger>
 
           <Accordion.Content>
@@ -119,7 +119,7 @@ const IndexPage: React.FC = () => {
                 - 企画・実装・デザイン
               </SupportingText>
               <SupportingText>
-                - Firebase, Next.js, Recoil, Emotion, Vercel
+                - Firebase, Next.js, Recoil
               </SupportingText>
             </TechWork>
             <Br style="large" />
@@ -144,6 +144,23 @@ const IndexPage: React.FC = () => {
             </TechWork>
             <Br style="large" />
 
+            {/* LaunchHub */}
+            <TechWork title="LaunchHub" imgSrc="/tech/launchhub.png">
+              <Jump href="https://github.com/moyotsukai/launch-hub-clone">
+                GitHub
+              </Jump>
+              <Spacer size={5} />
+              <p>
+                「労働を投資活動に」をコンセプトとした起業家と労働者のマッチングプラットフォーム。
+                web3の技術を使ったDappで、フロントエンドの実装を担当した。
+                AI+Crypto Hackathonに参加し、ASTAR Prizeを受賞。
+              </p>
+              <SupportingText>
+                - フロントエンド実装
+              </SupportingText>
+            </TechWork>
+            <Br style="large" />
+
             {/* Color Converter */}
             <TechWork title="Color Converter" imgSrc="/tech/color-converter.png">
               <Jump href="https://color.moyotsukai.dev">
@@ -158,7 +175,7 @@ const IndexPage: React.FC = () => {
                 - 企画・実装・デザイン
               </SupportingText>
               <SupportingText>
-                - Next.js, React Context, Emotion, Cloudflare Pages
+                - Next.js, React Context
               </SupportingText>
             </TechWork>
             <Br style="large" />
@@ -176,7 +193,7 @@ const IndexPage: React.FC = () => {
                 - 企画・実装・デザイン
               </SupportingText>
               <SupportingText>
-                - Next.js, Emotion
+                - Next.js
               </SupportingText>
             </TechWork>
             <Br style="large" />
@@ -194,7 +211,7 @@ const IndexPage: React.FC = () => {
                 - 企画・実装・デザイン
               </SupportingText>
               <SupportingText>
-                - Next.js, Emotion, microCMS, Netlify
+                - Next.js, Emotion, microCMS
               </SupportingText>
             </TechWork>
             <Br style="large" />
@@ -206,7 +223,7 @@ const IndexPage: React.FC = () => {
               </Jump>
               <Spacer size={5} />
               <SupportingText>
-                - Next.js, Radix UI, Emotion, Vercel
+                - Next.js, Radix UI, Emotion
               </SupportingText>
             </TechWork>
             <Br style="large" />
@@ -247,22 +264,6 @@ const IndexPage: React.FC = () => {
             </TechWork>
             <Br style="large" />
 
-            {/* ErabeRule iOS */}
-            <TechWork title="ErabeRule iOS版" imgSrc="/tech/eraberule.png">
-              <Jump href="https://apps.apple.com/jp/app/eraberule/id1552835670">
-                App Store
-              </Jump>
-              <Spacer size={5} />
-              <p>
-                ErabeRuleのiOS版アプリ。
-              </p>
-              <SupportingText>
-                - 企画・実装・デザイン
-              </SupportingText>
-              <SupportingText>
-                - Firebase, Swift
-              </SupportingText>
-            </TechWork>
           </Accordion.Content>
         </Accordion.Item>
 
@@ -271,7 +272,7 @@ const IndexPage: React.FC = () => {
         {/* Art */}
         <Accordion.Item value="item-art">
           <Accordion.Trigger>
-            作品 - Art
+            Art
           </Accordion.Trigger>
           <Accordion.Content>
             {/* もようつかい */}
@@ -330,13 +331,6 @@ const IndexPage: React.FC = () => {
             <SupportingText>リンク</SupportingText>
             <div>
               <p>
-                Twitter(メイン):
-                <Spacer size={5} isVertical={false} />
-                <Jump href="https://twitter.com/moyotsukai">
-                  @moyotsukai
-                </Jump>
-              </p>
-              <p>
                 GitHub:
                 <Spacer size={5} isVertical={false} />
                 <Jump href="https://github.com/moyotsukai">
@@ -358,6 +352,13 @@ const IndexPage: React.FC = () => {
                 </Jump>
               </p>
               <p>
+                Twitter(メイン):
+                <Spacer size={5} isVertical={false} />
+                <Jump href="https://twitter.com/moyotsukai">
+                  @moyotsukai
+                </Jump>
+              </p>
+              <p>
                 てんとうやTwitter:
                 <Spacer size={5} isVertical={false} />
                 <Jump href="https://twitter.com/tentouya64">
@@ -367,8 +368,9 @@ const IndexPage: React.FC = () => {
             </div>
             <Br />
 
-            <SupportingText>興味</SupportingText>
+            <SupportingText>関心</SupportingText>
             <div>
+              <p>経済学(社会的選択理論等)</p>
               <p>デザイン(UIデザイン, Webデザイン, タイポグラフィ)</p>
               <p>アート(ペーパークラフト開発, 生け花)</p>
               <p>プログラミング(Webフロントエンド, iOSアプリ)</p>
@@ -377,7 +379,7 @@ const IndexPage: React.FC = () => {
 
             <SupportingText>スキル</SupportingText>
             <div>
-              <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Rhinoceros</p>
+              <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Premiere Pro, Rhinoceros</p>
             </div>
             <Br />
 
