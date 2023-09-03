@@ -11,18 +11,14 @@ type Props = {
 const Jump: React.FC<Props> = (props) => {
   if (props.href.startsWith("/")) {
     return (
-      <Link href={props.href} passHref>
-        <a css={linkStyle}>
-          {props.children}
-        </a>
+      <Link href={props.href} css={linkStyle}>
+        {props.children}
       </Link>
     )
   } else {
     return (
-      <Link href={props.href} passHref>
-        <a target="_blank" rel="noopener noreferrer" css={linkStyle}>
-          {props.children}
-        </a>
+      <Link href={props.href} target="_blank" rel="noopener noreferrer" css={linkStyle} >
+        {props.children}
       </Link>
     )
   }
