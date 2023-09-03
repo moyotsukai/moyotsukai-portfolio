@@ -13,8 +13,26 @@ import Accordion from '../ui/Accordion'
 
 const moyotsukaiImages_1: ImageItem[] = [
   {
-    title: "『循環』 紙 140cm×140cm / 無限に流れる生命の循環のワンシーンを切り出しました。",
+    title: "『循環』 紙 140cm×140cm",
     src: "/tech/cycle.jpeg"
+  },
+  {
+    title: "無限に流れる生命の循環のワンシーンを切り出しました。",
+    src: "/tech/cycle_2.jpg"
+  },
+  {
+    title: "『再帰』 紙 140cm×140cm",
+    src: "/tech/reccurence.png"
+  },
+]
+
+const moyotsukaiImages_2: ImageItem[] = [
+  {
+    title: "『軌道』 紙 63cm×116cm",
+    src: "/tech/orbit_2.jpg"
+  }, {
+    title: "コウイカのペーパークラフトです。",
+    src: "/tech/orbit.jpg"
   },
   {
     title: "《Stride》 紙 42cm×91cm",
@@ -24,13 +42,9 @@ const moyotsukaiImages_1: ImageItem[] = [
     title: "ヤドカリが一歩一歩進んでいき、時間と共に平面から立体へと進展していきます。",
     src: "/tech/stride_2.jpg"
   },
-  {
-    title: "『再帰』 紙 140cm×140cm",
-    src: "/tech/reccurence.png"
-  },
 ]
 
-const moyotsukaiImages_2: ImageItem[] = [
+const moyotsukaiImages_3: ImageItem[] = [
   {
     title: "オオセンチコガネ",
     src: "/tech/oosenchi.jpg"
@@ -277,10 +291,6 @@ const IndexPage: React.FC = () => {
           <Accordion.Content>
             {/* もようつかい */}
             <TechWork title="もようつかい" imgSrc="/tech/moyotsukai.png">
-              <Jump href="https://twitter.com/moyotsukai">
-                Twitter
-              </Jump>
-              <Spacer size={5} />
               <p>
                 「もようつかい」として紙で立体作品を作っています。
                 主に昆虫など生き物のペーパークラフトを開発しています。
@@ -291,6 +301,8 @@ const IndexPage: React.FC = () => {
               <ImageGallery images={moyotsukaiImages_1} />
               <Br style="small" />
               <ImageGallery images={moyotsukaiImages_2} />
+              <Br style="small" />
+              <ImageGallery images={moyotsukaiImages_3} />
             </TechWork>
             <Br style="large" />
 
@@ -352,7 +364,7 @@ const IndexPage: React.FC = () => {
                 </Jump>
               </p>
               <p>
-                Twitter(メイン):
+                Twitter:
                 <Spacer size={5} isVertical={false} />
                 <Jump href="https://twitter.com/moyotsukai">
                   @moyotsukai
@@ -379,7 +391,7 @@ const IndexPage: React.FC = () => {
 
             <SupportingText>スキル</SupportingText>
             <div>
-              <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Premiere Pro, Rhinoceros</p>
+              <p>React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Premiere Pro, After Effects, Rhinoceros</p>
             </div>
             <Br />
 
