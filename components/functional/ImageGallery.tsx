@@ -5,6 +5,7 @@ import SupportingText from '../ui/SupportingText'
 import Spacer from '../ui/Spacer'
 import ScrollContainer from 'react-indiana-drag-scroll'
 import { ImageItem } from '../../types/ImageItem.type'
+import * as AspectRatio from '@radix-ui/react-aspect-ratio'
 
 type Props = {
   images: ImageItem[]
@@ -17,7 +18,7 @@ const ImageGallery: React.FC<Props> = (props) => {
         {props.images.map((item, index) => (
           <div css={imageItemStyle} key={index}>
             <div css={imageContainerStyle}>
-              <Image src={item.src} width={350} height={350} alt="" />
+              <Image src={item.src} width={350} height={350} layout='responsive' alt="" />
             </div>
             <div css={textContainerStyle}>
               <SupportingText>
@@ -45,6 +46,7 @@ const imageItemStyle = css`
   border: solid 1px #fff;
 `
 const imageContainerStyle = css`
+  width: 100%;
   max-width: 350px;
   max-height: 350px;
 `
