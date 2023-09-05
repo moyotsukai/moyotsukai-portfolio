@@ -154,7 +154,7 @@ const IndexPage: React.FC = () => {
                 経済学的に望ましいとされる投票ルールを実験的に用いることができる投票アプリ。
                 社会的選択理論の社会実装を目的としたWebアプリとしては国内初。
                 母校の経済の授業にて、教材として活用して頂いている。
-                高校３年次に校長賞を受賞。
+                高校３年で校長賞を受賞。
               </p>
               <SupportingText>
                 - 企画・実装・デザイン
@@ -202,6 +202,24 @@ const IndexPage: React.FC = () => {
             </TechWork>
             <Br style="large" />
 
+            {/* 展覧会キャプション生成ツール */}
+            <TechWork title="展覧会キャプション生成ツール" imgSrc="/tech/color-converter.png">
+              <Jump href="https://caption.moyotsukai.dev/">
+                caption.moyotsukai.dev
+              </Jump>
+              <Spacer size={5} />
+              <p>
+                Excelデータから展覧会のキャプションをPDF形式で自動生成します。
+              </p>
+              <SupportingText>
+                - 企画・実装・デザイン
+              </SupportingText>
+              <SupportingText>
+                - Next.js
+              </SupportingText>
+            </TechWork>
+            <Br style="large" />
+
             {/* Color Converter */}
             <TechWork title="Color Converter" imgSrc="/tech/color-converter.png">
               <Jump href="https://color.moyotsukai.dev">
@@ -217,24 +235,6 @@ const IndexPage: React.FC = () => {
               </SupportingText>
               <SupportingText>
                 - Next.js, React Context
-              </SupportingText>
-            </TechWork>
-            <Br style="large" />
-
-            {/* 展覧会キャプション生成ツール */}
-            <TechWork title="展覧会キャプション生成ツール" imgSrc="/tech/color-converter.png">
-              <Jump href="https://caption.moyotsukai.dev/">
-                caption.moyotsukai.dev
-              </Jump>
-              <Spacer size={5} />
-              <p>
-                Excelデータから展覧会のキャプションをPDF形式で自動生成します。
-              </p>
-              <SupportingText>
-                - 企画・実装・デザイン
-              </SupportingText>
-              <SupportingText>
-                - Next.js
               </SupportingText>
             </TechWork>
             <Br style="large" />
@@ -322,7 +322,6 @@ const IndexPage: React.FC = () => {
                 「もようつかい」として紙で立体作品を作っています。
                 主に昆虫など生き物のペーパークラフトを開発しています。
                 「てんとうや」で販売したり、展覧会に出品したりしています。
-                母校から依頼を受け、永久展示もしています。
               </p>
               <Spacer size={5} />
               <ImageGallery images={moyotsukaiImages_1} />
@@ -350,6 +349,9 @@ const IndexPage: React.FC = () => {
 
             {/* その他 */}
             <TechWork title="その他 中学・高校時の作品" imgSrc="/tech/moyotsukai.png">
+              <p>
+                中学生の時に制作した作品は、母校から依頼を受け永久展示されています。
+              </p>
               <Spacer size={5} />
               <ImageGallery images={highSchoolImages} />
             </TechWork>
