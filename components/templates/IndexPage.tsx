@@ -17,7 +17,7 @@ const moyotsukaiImages_1: ImageItem[] = [
     src: "/tech/cycle.jpeg"
   },
   {
-    title: "無限に流れる生命の循環のワンシーンを切り出しました。",
+    title: "『循環』 / 無限に流れる生命の循環のワンシーンを切り出した",
     src: "/tech/cycle_2.jpg"
   },
   {
@@ -31,7 +31,7 @@ const moyotsukaiImages_2: ImageItem[] = [
     title: "『軌道』 紙 63cm×116cm",
     src: "/tech/orbit_2.jpg"
   }, {
-    title: "コウイカのペーパークラフトです。",
+    title: "『軌道』 / コウイカのペーパークラフト",
     src: "/tech/orbit.jpg"
   },
   {
@@ -39,7 +39,7 @@ const moyotsukaiImages_2: ImageItem[] = [
     src: "/tech/stride_1.jpg"
   },
   {
-    title: "ヤドカリが一歩一歩進んでいき、時間と共に平面から立体へと進展していきます。",
+    title: "《Stride》 / ヤドカリが一歩一歩進んでいき、時間と共に平面から立体へと進展していく",
     src: "/tech/stride_2.jpg"
   },
 ]
@@ -65,7 +65,7 @@ const moyotsukaiImages_3: ImageItem[] = [
 
 const tentouyaImages: ImageItem[] = [
   {
-    title: "テントウトランプ / トランプの数字とテントウムシの模様が対応しています。",
+    title: "テントウトランプ / トランプの数字とテントウムシの模様が対応",
     src: "/tech/tentouplayingcards.jpg"
   },
   {
@@ -98,6 +98,33 @@ const highSchoolImages: ImageItem[] = [
   {
     title: "花器を制作",
     src: "/tech/ikebana.jpg"
+  },
+  {
+    title: "『生長の樹』 紙 高さ170cm",
+    src: "/tech/seichounoki.jpg"
+  },
+  {
+    title: "『生長の樹』/中学の時の成長を樹で表現",
+    src: "/tech/seichounoki_2.jpg"
+  },
+  {
+    title: "『生長の樹』",
+    src: "/tech/seichounoki_3.jpg"
+  }, {
+    title: "『生長の樹』/中学の時の思い出を配置",
+    src: "/tech/seichounoki_4.jpg"
+  },
+  {
+    title: "中学の会誌の扉絵",
+    src: "/tech/hanaminokasago.jpg"
+  },
+  {
+    title: "林間学校のしおり",
+    src: "/tech/asagimadara.jpg"
+  },
+  {
+    title: "陶芸",
+    src: "/tech/pottery.jpg"
   }
 ]
 
@@ -322,7 +349,7 @@ const IndexPage: React.FC = () => {
             <Br style="large" />
 
             {/* その他 */}
-            <TechWork title="その他" imgSrc="/tech/moyotsukai.png">
+            <TechWork title="その他 中学・高校時の作品" imgSrc="/tech/moyotsukai.png">
               <Spacer size={5} />
               <ImageGallery images={highSchoolImages} />
             </TechWork>
