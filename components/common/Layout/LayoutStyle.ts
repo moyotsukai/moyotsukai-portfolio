@@ -8,4 +8,5 @@ export const layoutStyle = css`
   grid-template-columns: 100%;
   min-height: 100vh;
   background-color: ${primaryBackgroundColor};
+  padding: 0 10px;
 `

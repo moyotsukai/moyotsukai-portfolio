@@ -23,14 +23,15 @@ const moyotsukaiImages_1: ImageItem[] = [
   {
     title: "『再帰』 紙 140cm×140cm",
     src: "/tech/reccurence.png"
-  },
+  }
 ]
 
 const moyotsukaiImages_2: ImageItem[] = [
   {
     title: "『軌道』 紙 63cm×116cm",
     src: "/tech/orbit_2.jpg"
-  }, {
+  },
+  {
     title: "『軌道』 / コウイカのペーパークラフト",
     src: "/tech/orbit.jpg"
   },
@@ -41,7 +42,7 @@ const moyotsukaiImages_2: ImageItem[] = [
   {
     title: "《Stride》 / ヤドカリが一歩一歩進んでいき、時間と共に平面から立体へと進展していく",
     src: "/tech/stride_2.jpg"
-  },
+  }
 ]
 
 const moyotsukaiImages_3: ImageItem[] = [
@@ -130,7 +131,7 @@ const highSchoolImages: ImageItem[] = [
 
 const IndexPage: React.FC = () => {
   return (
-    <div css={indexPageLayoutStyle}>
+    <div>
       <Seo />
       <Hero />
 
@@ -379,6 +380,13 @@ const IndexPage: React.FC = () => {
                 </Jump>
               </p>
               <p>
+                ブログ:
+                <Spacer size={5} isVertical={false} />
+                <Jump href="/blog">
+                  /blog
+                </Jump>
+              </p>
+              <p>
                 Qiita:
                 <Spacer size={5} isVertical={false} />
                 <Jump href="https://qiita.com/oishin">
@@ -437,10 +445,5 @@ const IndexPage: React.FC = () => {
     </div>
   )
 }
-
-const indexPageLayoutStyle = css`
-  /* margin: 0 auto; */
-  padding: 0 10px;
-`
 
 export default IndexPage

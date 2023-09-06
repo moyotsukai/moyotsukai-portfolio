@@ -1,7 +1,6 @@
-const primaryColor = "#0086e6"
-const primaryBackgroundColor = "#f2faff"
-const primaryHeighlightColor = "#e6f5ff"
-const dividerColor = "#b8c4cc"
-const supportingTextColor = "#3d4f5c"
-
-export { primaryColor, primaryBackgroundColor, primaryHeighlightColor, dividerColor, supportingTextColor }
+export const primaryColor = "#0086e6"
+export const primaryBackgroundColor = "#f2faff"
+export const primaryHeighlightColor = "#e6f5ff"
+export const dividerColor = "#b8c4cc"
+export const supportingTextColor = "#3d4f5c"
+export const primaryShadowColor = "rgba(31, 102, 153, 0.15)"
