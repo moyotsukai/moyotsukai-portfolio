@@ -11,7 +11,6 @@ export const blogCardStyle = css`
   border-radius: 6px;
   box-shadow: 0 1px 4px 0 ${primaryShadowColor};
 
-
   &:hover {
     box-shadow: 0 3px 10px 0 ${primaryShadowColor};
   }

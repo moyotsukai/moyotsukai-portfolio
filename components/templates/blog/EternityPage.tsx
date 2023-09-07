@@ -1,18 +1,18 @@
-import { ImageItem } from "../../types/ImageItem.type"
-import BlogContainer from "../blog/BlogContent"
-import BlogH2 from "../blog/BlogH2"
-import BlogTitle from "../blog/BlogTitle"
-import ImageGallery from "../functional/ImageGallery"
-import BackNavigation from "../ui/BackNavigation"
-import Br from "../ui/Br"
+import { ImageItem } from "../../../types/ImageItem.type"
+import BlogContainer from "../../blog/BlogContent"
+import BlogH2 from "../../blog/BlogH2"
+import BlogTitle from "../../blog/BlogTitle"
+import ImageGallery from "../../functional/ImageGallery"
+import BackNavigation from "../../ui/BackNavigation"
+import Br from "../../ui/Br"
 
 const images_1: ImageItem[] = [
   {
-    title: "『循環』",
+    title: "『循環』 紙 140cm×140cm",
     src: "/tech/cycle.jpeg"
   },
   {
-    title: "『軌道』",
+    title: "『軌道』 紙 63cm×116cm",
     src: "/tech/orbit.jpg"
   },
   {
@@ -20,7 +20,7 @@ const images_1: ImageItem[] = [
     src: "/tech/stride_1.jpg"
   },
   {
-    title: "『再帰』",
+    title: "『再帰』 紙 140cm×140cm",
     src: "/tech/reccurence.png"
   }
 ]

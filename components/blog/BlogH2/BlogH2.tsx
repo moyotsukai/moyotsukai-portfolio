@@ -6,8 +6,8 @@ type Props = {
 
 const BlogH2: React.FC<Props> = ({ children }) => {
   return (
-    <p css={s.blogH2Style}>
-      {children}
+    <p>
+      <span css={s.blogH2Style}>{children}</span>
     </p>
   )
 }

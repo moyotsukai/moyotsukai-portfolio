@@ -325,6 +325,10 @@ const IndexPage: React.FC = () => {
                 「てんとうや」で販売したり、展覧会に出品したりしています。
               </p>
               <Spacer size={5} />
+              <Jump href="/blog">
+                テーマについて→
+              </Jump>
+              <Spacer size={5} />
               <ImageGallery images={moyotsukaiImages_1} />
               <Br style="small" />
               <ImageGallery images={moyotsukaiImages_2} />
