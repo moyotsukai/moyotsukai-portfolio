@@ -240,6 +240,24 @@ const IndexPage: React.FC = () => {
             </TechWork>
             <Br style="large" />
 
+            {/* 年賀状アプリ */}
+            <TechWork title="年賀状アプリ" imgSrc="/tech/color-converter.png">
+              <Jump href="https://newyearscard.moyotsukai.dev/guide">
+                newyearscard.moyotsukai.dev/guide
+              </Jump>
+              <Spacer size={5} />
+              <p>
+                メッセージ付きの年賀状を送れるアプリ
+              </p>
+              <SupportingText>
+                - 企画・実装・デザイン
+              </SupportingText>
+              <SupportingText>
+                - Next.js
+              </SupportingText>
+            </TechWork>
+            <Br style="large" />
+
             {/* てんとうやホームページ */}
             <TechWork title="てんとうや ホームページ" imgSrc="/tech/tentouya.png">
               <Jump href="https://tentouya.com">
@@ -247,7 +265,7 @@ const IndexPage: React.FC = () => {
               </Jump>
               <Spacer size={5} />
               <p>
-                自分達の運営する昆虫グッズブランドのホームページ。
+                自分達の運営する昆虫グッズブランドのホームページ
               </p>
               <SupportingText>
                 - 企画・実装・デザイン
@@ -277,7 +295,7 @@ const IndexPage: React.FC = () => {
               </Jump>
               <Spacer size={5} />
               <p>
-                写真を色で分類するという視点を提案するiOSアプリ。
+                写真を色で分類するという視点を提案するiOSアプリ
               </p>
               <SupportingText>
                 - 企画・実装・デザイン
@@ -295,7 +313,7 @@ const IndexPage: React.FC = () => {
               </Jump>
               <Spacer size={5} />
               <p>
-                アルバムにある写真を半透明に重ねて写真撮影ができるiOSアプリ。
+                アルバムにある写真を半透明に重ねて写真撮影ができるiOSアプリ
               </p>
               <SupportingText>
                 - 企画・実装・デザイン
