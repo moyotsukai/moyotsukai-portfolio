@@ -235,7 +235,7 @@ const IndexPage: React.FC = () => {
                 - 企画・実装・デザイン
               </SupportingText>
               <SupportingText>
-                - Next.js, React Context
+                - Next.js
               </SupportingText>
             </TechWork>
             <Br style="large" />
@@ -245,16 +245,14 @@ const IndexPage: React.FC = () => {
               <Jump href="https://newyearscard.moyotsukai.dev/guide">
                 newyearscard.moyotsukai.dev/guide
               </Jump>
-              <Spacer size={5} />
-              <p>
-                メッセージ付きの年賀状を送れるアプリ
-              </p>
-              <SupportingText>
-                - 企画・実装・デザイン
-              </SupportingText>
-              <SupportingText>
-                - Next.js
-              </SupportingText>
+            </TechWork>
+            <Br style="large" />
+
+            {/* 自己紹介カードジェネレータ */}
+            <TechWork title="自己紹介カードジェネレータ" imgSrc="/tech/color-converter.png">
+              <Jump href="https://self-introduction.moyotsukai.dev/">
+                self-introduction.moyotsukai.dev
+              </Jump>
             </TechWork>
             <Br style="large" />
 
