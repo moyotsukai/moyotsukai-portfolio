@@ -1,5 +1,4 @@
 import React from "react"
-import { css } from "@emotion/react"
 import Spacer from "../ui/Spacer"
 import Hero from "../functional/Hero"
 import Br from "../ui/Br"
