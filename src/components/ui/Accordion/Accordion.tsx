@@ -1,9 +1,9 @@
-import React from 'react'
-import * as AccordionPrimitive from '@radix-ui/react-accordion'
-import * as s from './AccordionStyle'
-import ArrowIcon from '../../icons/ArrowIcon'
-import Divider from '../../ui/Divider'
-import Spacer from '../../ui/Spacer'
+import React from "react"
+import * as AccordionPrimitive from "@radix-ui/react-accordion"
+import * as s from "./AccordionStyle"
+import ArrowIcon from "../../icons/ArrowIcon"
+import Divider from "../Divider"
+import Spacer from "../Spacer"
 
 type RootProps = {
   type: "single" | "multiple"
@@ -11,7 +11,11 @@ type RootProps = {
 }
 
 export const Root: React.FC<RootProps> = ({ type, children, ...props }) => (
-  <AccordionPrimitive.Root type={type} {...props} css={s.rootStyle} >
+  <AccordionPrimitive.Root
+    type={type}
+    {...props}
+    css={s.rootStyle}
+  >
     {children}
   </AccordionPrimitive.Root>
 )
@@ -22,7 +26,11 @@ type ItemProps = {
 }
 
 export const Item: React.FC<ItemProps> = ({ value, children, ...props }) => (
-  <AccordionPrimitive.Item value={value} {...props} css={s.itemStyle}>
+  <AccordionPrimitive.Item
+    value={value}
+    {...props}
+    css={s.itemStyle}
+  >
     {children}
   </AccordionPrimitive.Item>
 )
@@ -32,9 +40,7 @@ type HeaderProps = {
 }
 
 export const Header: React.FC<HeaderProps> = ({ children, ...props }) => (
-  <AccordionPrimitive.Header {...props} >
-    {children}
-  </AccordionPrimitive.Header>
+  <AccordionPrimitive.Header {...props}>{children}</AccordionPrimitive.Header>
 )
 
 type TriggerProps = {
@@ -43,7 +49,10 @@ type TriggerProps = {
 
 export const Trigger: React.FC<TriggerProps> = ({ children, ...props }) => (
   <Header>
-    <AccordionPrimitive.Trigger {...props} css={s.triggerStyle}>
+    <AccordionPrimitive.Trigger
+      {...props}
+      css={s.triggerStyle}
+    >
       {children}
       <ArrowIcon />
     </AccordionPrimitive.Trigger>
@@ -55,7 +64,10 @@ type ContentProps = {
 }
 
 export const Content: React.FC<ContentProps> = ({ children, ...props }) => (
-  <AccordionPrimitive.Content {...props} css={s.contentStyle}>
+  <AccordionPrimitive.Content
+    {...props}
+    css={s.contentStyle}
+  >
     <div css={s.contentInsetStyle}>
       <Divider />
       <Spacer size={15} />

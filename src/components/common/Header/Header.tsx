@@ -1,12 +1,15 @@
-import * as s from './HeaderStyle'
-import ProfileImg from '../../../public/profile.jpeg'
-import Link from 'next/link'
-import Image from 'next/image'
+import * as s from "./HeaderStyle"
+import ProfileImg from "../../../../public/profile.jpeg"
+import Link from "next/link"
+import Image from "next/image"
 
 const Header: React.FC = () => {
   return (
     <header css={s.headerStyle}>
-      <Link href="/" css={s.linkStyle}>
+      <Link
+        href="/"
+        css={s.linkStyle}
+      >
         <div css={s.imageStyle}>
           <Image
             src={ProfileImg.src}
@@ -16,9 +19,7 @@ const Header: React.FC = () => {
             alt="profile image"
           />
         </div>
-        <span css={s.spanStyle}>
-          Shintaro Aoi Portfolio
-        </span>
+        <span css={s.spanStyle}>Shintaro Aoi Portfolio</span>
       </Link>
     </header>
   )
