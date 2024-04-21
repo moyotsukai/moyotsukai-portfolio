@@ -1,139 +1,138 @@
-import React from "react";
-import { css } from "@emotion/react";
-import Spacer from "../ui/Spacer";
-import Hero from "../functional/Hero";
-import Br from "../ui/Br";
-import Jump from "../ui/Jump";
-import TechWork from "../functional/TechWork";
-import SupportingText from "../ui/SupportingText";
-import { ImageItem } from "../../types/ImageItem.type";
-import ImageGallery from "../functional/ImageGallery";
-import Seo from "../common/Seo";
-import Accordion from "../ui/Accordion";
+import React from "react"
+import { css } from "@emotion/react"
+import Spacer from "../ui/Spacer"
+import Hero from "../functional/Hero"
+import Br from "../ui/Br"
+import Jump from "../ui/Jump"
+import TechWork from "../functional/TechWork"
+import SupportingText from "../ui/SupportingText"
+import { ImageItem } from "../../types/ImageItem.type"
+import ImageGallery from "../functional/ImageGallery"
+import Seo from "../common/Seo"
+import Accordion from "../ui/Accordion"
 
 const moyotsukaiImages_1: ImageItem[] = [
   {
     title: "『循環』 紙 140cm×140cm",
-    src: "/tech/cycle.jpeg",
+    src: "/tech/cycle.jpeg"
   },
   {
     title: "『循環』 / 無限に流れる生命の循環のワンシーンを切り出した",
-    src: "/tech/cycle_2.jpg",
+    src: "/tech/cycle_2.jpg"
   },
   {
     title: "『再帰』 紙 140cm×140cm",
-    src: "/tech/reccurence.png",
-  },
-];
+    src: "/tech/reccurence.png"
+  }
+]
 
 const moyotsukaiImages_2: ImageItem[] = [
   {
     title: "『穏やかさの形』 紙 38cm×60cm",
-    src: "/tech/seahorse.jpg",
+    src: "/tech/seahorse.jpg"
   },
   {
     title: "『軌道』 紙 63cm×116cm",
-    src: "/tech/orbit_2.jpg",
+    src: "/tech/orbit_2.jpg"
   },
   {
     title: "『軌道』 / コウイカのペーパークラフト",
-    src: "/tech/orbit.jpg",
+    src: "/tech/orbit.jpg"
   },
   {
     title: "《Stride》 紙 42cm×91cm",
-    src: "/tech/stride_1.jpg",
+    src: "/tech/stride_1.jpg"
   },
   {
-    title:
-      "《Stride》 / ヤドカリが一歩一歩進んでいき、時間と共に平面から立体へと進展していく",
-    src: "/tech/stride_2.jpg",
-  },
-];
+    title: "《Stride》 / ヤドカリが一歩一歩進んでいき、時間と共に平面から立体へと進展していく",
+    src: "/tech/stride_2.jpg"
+  }
+]
 
 const moyotsukaiImages_3: ImageItem[] = [
   {
     title: "オオセンチコガネ",
-    src: "/tech/oosenchi.jpg",
+    src: "/tech/oosenchi.jpg"
   },
   {
     title: "カブトガニ",
-    src: "/tech/horseshoecrab.jpg",
+    src: "/tech/horseshoecrab.jpg"
   },
   {
     title: "マイマイカブリ",
-    src: "/tech/maimaikaburi.jpg",
+    src: "/tech/maimaikaburi.jpg"
   },
   {
     title: "カメノコテントウ",
-    src: "/tech/kamenokotentou.jpg",
-  },
-];
+    src: "/tech/kamenokotentou.jpg"
+  }
+]
 
 const tentouyaImages: ImageItem[] = [
   {
     title: "テントウトランプ / トランプの数字とテントウムシの模様が対応",
-    src: "/tech/tentouplayingcards.jpg",
+    src: "/tech/tentouplayingcards.jpg"
   },
   {
     title: "Tシャツ",
-    src: "/tech/tshirt.jpg",
+    src: "/tech/tshirt.jpg"
   },
   {
     title: "テントウダイス / 1〜6の目を実際のテントウムシの模様で表したダイス",
-    src: "/tech/tentoudice.jpg",
+    src: "/tech/tentoudice.jpg"
   },
   {
     title: "絵はがき",
-    src: "/tech/postcard.jpg",
-  },
-];
+    src: "/tech/postcard.jpg"
+  }
+]
 
 const highSchoolImages: ImageItem[] = [
   {
     title: "生け花",
-    src: "/tech/ikebana.png",
+    src: "/tech/ikebana.png"
   },
   {
     title: "スクラッチのお皿",
-    src: "/tech/okinawachoutonbo.jpg",
+    src: "/tech/okinawachoutonbo.jpg"
   },
   {
     title: "スクラッチのお皿",
-    src: "/tech/youjiuo.jpg",
+    src: "/tech/youjiuo.jpg"
   },
   {
     title: "花器を制作",
-    src: "/tech/ikebana.jpg",
+    src: "/tech/ikebana.jpg"
   },
   {
     title: "『生長の樹』 紙 高さ170cm",
-    src: "/tech/seichounoki.jpg",
+    src: "/tech/seichounoki.jpg"
   },
   {
     title: "『生長の樹』/中学の時の成長を樹で表現",
-    src: "/tech/seichounoki_2.jpg",
+    src: "/tech/seichounoki_2.jpg"
   },
   {
     title: "『生長の樹』",
-    src: "/tech/seichounoki_3.jpg",
+    src: "/tech/seichounoki_3.jpg"
   },
   {
     title: "『生長の樹』/中学の時の思い出を配置",
-    src: "/tech/seichounoki_4.jpg",
+    src: "/tech/seichounoki_4.jpg"
   },
   {
     title: "中学の会誌の扉絵",
-    src: "/tech/hanaminokasago.jpg",
+    src: "/tech/hanaminokasago.jpg"
   },
   {
     title: "林間学校のしおり",
-    src: "/tech/asagimadara.jpg",
+    src: "/tech/asagimadara.jpg"
   },
   {
     title: "陶芸",
-    src: "/tech/pottery.jpg",
-  },
-];
+    src: "/tech/pottery.jpg"
+  }
+]
 
 const IndexPage: React.FC = () => {
   return (
@@ -149,14 +148,16 @@ const IndexPage: React.FC = () => {
 
           <Accordion.Content>
             {/* ErabeRule */}
-            <TechWork title="ErabeRule" imgSrc="/tech/eraberule.png">
+            <TechWork
+              title="ErabeRule"
+              imgSrc="/tech/eraberule.png"
+            >
               <Jump href="https://eraberule.com">eraberule.com</Jump>
               <Spacer size={5} />
               <p>
                 経済学的に望ましいとされる投票ルールを実験的に用いることができる投票アプリ。
                 社会的選択理論の社会実装を目的としたWebアプリとしては国内初。
-                母校の経済の授業にて、教材として活用して頂いている。
-                高校３年で校長賞を受賞。
+                母校の経済の授業にて、教材として活用して頂いている。 高校３年で校長賞を受賞。
               </p>
               <SupportingText>- 企画・実装・デザイン</SupportingText>
               <SupportingText>- Firebase, Next.js, Recoil</SupportingText>
@@ -168,9 +169,7 @@ const IndexPage: React.FC = () => {
               title="@moyotsukai/bezier"
               imgSrc="/tech/color-converter.png"
             >
-              <Jump href="https://www.npmjs.com/package/@moyotsukai/bezier">
-                @moyotsukai/bezier
-              </Jump>
+              <Jump href="https://www.npmjs.com/package/@moyotsukai/bezier">@moyotsukai/bezier</Jump>
               <Spacer size={5} />
               <p>
                 コードでベジェ曲線を描画するライブラリ。
@@ -183,15 +182,16 @@ const IndexPage: React.FC = () => {
             <Br style="large" />
 
             {/* LaunchHub */}
-            <TechWork title="LaunchHub" imgSrc="/tech/launchhub.png">
-              <Jump href="https://github.com/moyotsukai/launch-hub-clone">
-                GitHub
-              </Jump>
+            <TechWork
+              title="LaunchHub"
+              imgSrc="/tech/launchhub.png"
+            >
+              <Jump href="https://github.com/moyotsukai/launch-hub-clone">GitHub</Jump>
               <Spacer size={5} />
               <p>
                 「労働を投資活動に」をコンセプトとした起業家と労働者のマッチングプラットフォーム。
-                web3の技術を使ったDappで、フロントエンドの実装を担当した。
-                AI+Crypto Hackathonに参加し、ASTAR Prizeを受賞。
+                web3の技術を使ったDappで、フロントエンドの実装を担当した。 AI+Crypto Hackathonに参加し、ASTAR
+                Prizeを受賞。
               </p>
               <SupportingText>- フロントエンド実装</SupportingText>
             </TechWork>
@@ -202,13 +202,9 @@ const IndexPage: React.FC = () => {
               title="展覧会キャプション生成ツール"
               imgSrc="/tech/color-converter.png"
             >
-              <Jump href="https://caption.moyotsukai.dev/">
-                caption.moyotsukai.dev
-              </Jump>
+              <Jump href="https://caption.moyotsukai.dev/">caption.moyotsukai.dev</Jump>
               <Spacer size={5} />
-              <p>
-                Excelデータから展覧会のキャプションをPDF形式で自動生成します。
-              </p>
+              <p>Excelデータから展覧会のキャプションをPDF形式で自動生成します。</p>
               <SupportingText>- 企画・実装・デザイン</SupportingText>
               <SupportingText>- Next.js</SupportingText>
             </TechWork>
@@ -219,9 +215,7 @@ const IndexPage: React.FC = () => {
               title="Color Converter"
               imgSrc="/tech/color-converter.png"
             >
-              <Jump href="https://color.moyotsukai.dev">
-                color.moyotsukai.dev
-              </Jump>
+              <Jump href="https://color.moyotsukai.dev">color.moyotsukai.dev</Jump>
               <Spacer size={5} />
               <p>
                 Hex, RGBAなど５つの形式に相互に対応したカラー変換ツール。
@@ -233,10 +227,11 @@ const IndexPage: React.FC = () => {
             <Br style="large" />
 
             {/* 年賀状アプリ */}
-            <TechWork title="年賀状アプリ" imgSrc="/tech/color-converter.png">
-              <Jump href="https://newyearscard.moyotsukai.dev/guide">
-                newyearscard.moyotsukai.dev/guide
-              </Jump>
+            <TechWork
+              title="年賀状アプリ"
+              imgSrc="/tech/color-converter.png"
+            >
+              <Jump href="https://newyearscard.moyotsukai.dev/guide">newyearscard.moyotsukai.dev/guide</Jump>
             </TechWork>
             <Br style="large" />
 
@@ -245,9 +240,7 @@ const IndexPage: React.FC = () => {
               title="自己紹介カードジェネレータ"
               imgSrc="/tech/color-converter.png"
             >
-              <Jump href="https://self-introduction.moyotsukai.dev/">
-                self-introduction.moyotsukai.dev
-              </Jump>
+              <Jump href="https://self-introduction.moyotsukai.dev/">self-introduction.moyotsukai.dev</Jump>
             </TechWork>
             <Br style="large" />
 
@@ -276,10 +269,11 @@ const IndexPage: React.FC = () => {
             <Br style="large" />
 
             {/* ByColor */}
-            <TechWork title="ByColor" imgSrc="/tech/bycolor.png">
-              <Jump href="https://apps.apple.com/us/app/bycolor-sort-photos-by-color/id1498754477">
-                App Store
-              </Jump>
+            <TechWork
+              title="ByColor"
+              imgSrc="/tech/bycolor.png"
+            >
+              <Jump href="https://apps.apple.com/us/app/bycolor-sort-photos-by-color/id1498754477">App Store</Jump>
               <Spacer size={5} />
               <p>写真を色で分類するという視点を提案するiOSアプリ</p>
               <SupportingText>- 企画・実装・デザイン</SupportingText>
@@ -288,10 +282,11 @@ const IndexPage: React.FC = () => {
             <Br style="large" />
 
             {/* CameraLayer */}
-            <TechWork title="CameraLayer" imgSrc="/tech/cameralayer.png">
-              <Jump href="https://apps.apple.com/us/app/cameralayer-translucent-screen/id1502882036">
-                App Store
-              </Jump>
+            <TechWork
+              title="CameraLayer"
+              imgSrc="/tech/cameralayer.png"
+            >
+              <Jump href="https://apps.apple.com/us/app/cameralayer-translucent-screen/id1502882036">App Store</Jump>
               <Spacer size={5} />
               <p>アルバムにある写真を半透明に重ねて写真撮影ができるiOSアプリ</p>
               <SupportingText>- 企画・実装・デザイン</SupportingText>
@@ -308,7 +303,10 @@ const IndexPage: React.FC = () => {
           <Accordion.Trigger>Art</Accordion.Trigger>
           <Accordion.Content>
             {/* もようつかい */}
-            <TechWork title="もようつかい" imgSrc="/tech/moyotsukai.png">
+            <TechWork
+              title="もようつかい"
+              imgSrc="/tech/moyotsukai.png"
+            >
               <p>
                 「もようつかい」として紙で立体作品を作っています。
                 主に昆虫など生き物のペーパークラフトを開発しています。
@@ -326,7 +324,10 @@ const IndexPage: React.FC = () => {
             <Br style="large" />
 
             {/* てんとうや */}
-            <TechWork title="てんとうや" imgSrc="/tech/tentouya.png">
+            <TechWork
+              title="てんとうや"
+              imgSrc="/tech/tentouya.png"
+            >
               <Jump href="https://tentouya.com">tentouya.com</Jump>
               <Spacer size={5} />
               <p>
@@ -343,9 +344,7 @@ const IndexPage: React.FC = () => {
               title="その他 中学・高校時の作品"
               imgSrc="/tech/moyotsukai.png"
             >
-              <p>
-                中学生の時に制作した作品は、母校から依頼を受け永久展示されています。
-              </p>
+              <p>中学生の時に制作した作品は、母校から依頼を受け永久展示されています。</p>
               <Spacer size={5} />
               <ImageGallery images={highSchoolImages} />
             </TechWork>
@@ -365,32 +364,50 @@ const IndexPage: React.FC = () => {
             <div>
               <p>
                 GitHub:
-                <Spacer size={5} isVertical={false} />
+                <Spacer
+                  size={5}
+                  isVertical={false}
+                />
                 <Jump href="https://github.com/moyotsukai">moyotsukai</Jump>
               </p>
               <p>
                 ブログ:
-                <Spacer size={5} isVertical={false} />
+                <Spacer
+                  size={5}
+                  isVertical={false}
+                />
                 <Jump href="/blog">/blog</Jump>
               </p>
               <p>
                 Qiita:
-                <Spacer size={5} isVertical={false} />
+                <Spacer
+                  size={5}
+                  isVertical={false}
+                />
                 <Jump href="https://qiita.com/oishin">@oishin</Jump>
               </p>
               <p>
                 Zenn:
-                <Spacer size={5} isVertical={false} />
+                <Spacer
+                  size={5}
+                  isVertical={false}
+                />
                 <Jump href="https://zenn.dev/moyotsukai">@moyotsukai</Jump>
               </p>
               <p>
                 Twitter:
-                <Spacer size={5} isVertical={false} />
+                <Spacer
+                  size={5}
+                  isVertical={false}
+                />
                 <Jump href="https://twitter.com/moyotsukai">@moyotsukai</Jump>
               </p>
               <p>
                 てんとうやTwitter:
-                <Spacer size={5} isVertical={false} />
+                <Spacer
+                  size={5}
+                  isVertical={false}
+                />
                 <Jump href="https://twitter.com/tentouya64">@tentouya64</Jump>
               </p>
             </div>
@@ -408,8 +425,7 @@ const IndexPage: React.FC = () => {
             <SupportingText>スキル</SupportingText>
             <div>
               <p>
-                React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop,
-                Premiere Pro, After Effects, Rhinoceros
+                React, Swift, TypeScript, HTML, CSS, Illustrator, Photoshop, Premiere Pro, After Effects, Rhinoceros
               </p>
             </div>
             <Br />
@@ -424,7 +440,7 @@ const IndexPage: React.FC = () => {
 
       <Spacer size={30} />
     </div>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage
