@@ -8,21 +8,16 @@ const posts: BlogPost[] = [
   {
     href: "/blog/eternity",
     title: "無限について",
-    image: "/tech/cycle.jpeg",
+    image: "/image/cycle.jpeg",
     date: "2023/09/07"
   }
 ]
 
-
 const BlogPage: React.FC = () => {
   return (
     <div>
-      <BackNavigation href="/">
-        Home
-      </BackNavigation>
-      <BlogTitle
-        title="ブログ"
-      />
+      <BackNavigation href="/">Home</BackNavigation>
+      <BlogTitle title="ブログ" />
       <div css={postsContainerStyle}>
         {posts.map((post, index) => (
           <BlogCard
@@ -44,7 +39,7 @@ const postsContainerStyle = css`
   margin: 0 auto;
   padding: 20px 0;
 
-  @media(max-width: 500px) {
+  @media (max-width: 500px) {
     justify-content: center;
   }
 `

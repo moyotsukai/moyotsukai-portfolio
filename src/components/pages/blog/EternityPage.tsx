@@ -9,49 +9,47 @@ import Br from "../../ui/Br"
 const images_1: ImageItem[] = [
   {
     title: "『循環』 紙 140cm×140cm",
-    src: "/tech/cycle.jpeg"
+    src: "/image/cycle.jpeg"
   },
   {
     title: "『軌道』 紙 63cm×116cm",
-    src: "/tech/orbit.jpg"
+    src: "/image/orbit.jpg"
   },
   {
     title: "《Stride》 紙 42cm×91cm",
-    src: "/tech/stride_1.jpg"
+    src: "/image/stride_1.jpg"
   },
   {
     title: "『再帰』 紙 140cm×140cm",
-    src: "/tech/reccurence.png"
+    src: "/image/reccurence.png"
   }
 ]
 
 const images_2: ImageItem[] = [
   {
     title: "『循環』",
-    src: "/tech/cycle_2.jpg"
+    src: "/image/cycle_2.jpg"
   }
 ]
 
 const images_3: ImageItem[] = [
   {
     title: "『軌道』",
-    src: "/tech/orbit_2.jpg"
+    src: "/image/orbit_2.jpg"
   }
 ]
 
 const images_5: ImageItem[] = [
   {
     title: "矢羽のようなパターン",
-    src: "/tech/yabane.png"
+    src: "/image/yabane.png"
   }
 ]
 
 const EternityPage: React.FC = () => {
   return (
     <div>
-      <BackNavigation href="/blog">
-        Blog
-      </BackNavigation>
+      <BackNavigation href="/blog">Blog</BackNavigation>
       <BlogTitle
         title="無限について"
         date="2023/09/07"
@@ -61,9 +59,7 @@ const EternityPage: React.FC = () => {
           紙は直線に沿って折るだけでなく、実は曲線に沿って折ることができる。曲線に沿って折ると、とても面白い形を作ることができる。
         </p>
         <Br />
-        <p>
-          私の趣味は展開図を描くことだ。私は展開図を設計し、紙を折り、ペーパークラフトを作っている。
-        </p>
+        <p>私の趣味は展開図を描くことだ。私は展開図を設計し、紙を折り、ペーパークラフトを作っている。</p>
         <Br />
         <p>
           ペーパークラフトは、展開図に沿って組み立てれば必ず同じ形が出来上がる。偶然別の形になったりはしない。再現性があり、何度でも無限に同じ形を作り出せる。完成形の立体を出力するような仕組みを平面上に設計する、それが展開図作成の面白いところだ。
@@ -71,9 +67,7 @@ const EternityPage: React.FC = () => {
         <Br />
         <Br />
         <BlogH2>一連の作品のテーマ</BlogH2>
-        <p>
-          これまでに制作した作品に共通するテーマについて紹介する。
-        </p>
+        <p>これまでに制作した作品に共通するテーマについて紹介する。</p>
         <Br />
         <ImageGallery images={images_1} />
         <Br />
@@ -81,9 +75,7 @@ const EternityPage: React.FC = () => {
           これらの作品は、「始まりも終わりもなく無限に流れる時間、無限に広がる空間」をテーマとしている。一連のペーパークラフトの作品では、世界をそのようなものと捉えている。これらの作品は、無限に広がる世界の一部を切り取ってきた景色である。切り取ってきたのが一部であるからこそ、切り取る前の世界全体を表現することができる。
         </p>
         <Br />
-        <p>
-          再現性があり何度でも同じ形を作り出せるペーパークラフトは、「無限」というテーマと相性が良い。
-        </p>
+        <p>再現性があり何度でも同じ形を作り出せるペーパークラフトは、「無限」というテーマと相性が良い。</p>
         <Br />
         <p>
           これまで作った作品はどれも立体作品ではあるが、机に置くのではなく壁に掛けて展示する形式になっている。これには理由がある。これらの一連の作品は“景色”であってほしい。その存在自体で閉じた世界を持たず、ずっと外側まで広がる世界の一部であってほしい。景色なので背景部分は平面であり、絵のように壁に掛かっている形式とした。作品内で観測できるのが一部であるからこそ、永遠を想像することができる。
@@ -97,9 +89,7 @@ const EternityPage: React.FC = () => {
         <Br />
         <Br />
         <BlogH2>作品の制作過程</BlogH2>
-        <p>
-          『軌道』を例に、作品の制作過程を少しだけ紹介する。
-        </p>
+        <p>『軌道』を例に、作品の制作過程を少しだけ紹介する。</p>
         <Br />
         <ImageGallery images={images_3} />
         <Br />

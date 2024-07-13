@@ -12,124 +12,140 @@ import Accordion from "../ui/Accordion"
 
 const moyotsukaiImages_1: ImageItem[] = [
   {
-    title: "『循環』 紙 140cm×140cm",
-    src: "/tech/cycle.jpeg"
+    title: "『紙によるセザンヌ的キュビスム』 紙 31cm×38cm",
+    src: "/image/cubism_1_1.jpg"
   },
   {
-    title: "『循環』 / 無限に流れる生命の循環のワンシーンを切り出した",
-    src: "/tech/cycle_2.jpg"
+    title: "",
+    src: "/image/cubism_1_2.jpg"
   },
   {
-    title: "『再帰』 紙 140cm×140cm",
-    src: "/tech/reccurence.png"
+    title: "『紙によるセザンヌ的キュビスム』 紙 31cm×38cm",
+    src: "/image/cubism_2_1.jpg"
+  },
+  {
+    title: "",
+    src: "/image/cubism_2_2.jpg"
+  },
+  {
+    title: "『穏やかさの形』 紙 38cm×60cm",
+    src: "/image/seahorse.jpg"
   }
 ]
 
 const moyotsukaiImages_2: ImageItem[] = [
   {
-    title: "『穏やかさの形』 紙 38cm×60cm",
-    src: "/tech/seahorse.jpg"
+    title: "『循環』 紙 140cm×140cm",
+    src: "/image/cycle.jpeg"
+  },
+  {
+    title: "『循環』 / 無限に流れる生命の循環のワンシーンを切り出した",
+    src: "/image/cycle_2.jpg"
   },
   {
     title: "『軌道』 紙 63cm×116cm",
-    src: "/tech/orbit_2.jpg"
+    src: "/image/orbit_2.jpg"
   },
   {
     title: "『軌道』 / コウイカのペーパークラフト",
-    src: "/tech/orbit.jpg"
+    src: "/image/orbit.jpg"
   },
   {
     title: "《Stride》 紙 42cm×91cm",
-    src: "/tech/stride_1.jpg"
+    src: "/image/stride_1.jpg"
   },
   {
     title: "《Stride》 / ヤドカリが一歩一歩進んでいき、時間と共に平面から立体へと進展していく",
-    src: "/tech/stride_2.jpg"
+    src: "/image/stride_2.jpg"
+  },
+  {
+    title: "『再帰』 紙 140cm×140cm",
+    src: "/image/reccurence.png"
   }
 ]
 
 const moyotsukaiImages_3: ImageItem[] = [
   {
     title: "オオセンチコガネ",
-    src: "/tech/oosenchi.jpg"
+    src: "/image/oosenchi.jpg"
   },
   {
     title: "カブトガニ",
-    src: "/tech/horseshoecrab.jpg"
+    src: "/image/horseshoecrab.jpg"
   },
   {
     title: "マイマイカブリ",
-    src: "/tech/maimaikaburi.jpg"
+    src: "/image/maimaikaburi.jpg"
   },
   {
     title: "カメノコテントウ",
-    src: "/tech/kamenokotentou.jpg"
+    src: "/image/kamenokotentou.jpg"
   }
 ]
 
 const tentouyaImages: ImageItem[] = [
   {
     title: "テントウトランプ / トランプの数字とテントウムシの模様が対応",
-    src: "/tech/tentouplayingcards.jpg"
+    src: "/image/tentouplayingcards.jpg"
   },
   {
     title: "Tシャツ",
-    src: "/tech/tshirt.jpg"
+    src: "/image/tshirt.jpg"
   },
   {
     title: "テントウダイス / 1〜6の目を実際のテントウムシの模様で表したダイス",
-    src: "/tech/tentoudice.jpg"
+    src: "/image/tentoudice.jpg"
   },
   {
     title: "絵はがき",
-    src: "/tech/postcard.jpg"
+    src: "/image/postcard.jpg"
   }
 ]
 
 const highSchoolImages: ImageItem[] = [
   {
     title: "生け花",
-    src: "/tech/ikebana.png"
+    src: "/image/ikebana.png"
   },
   {
     title: "スクラッチのお皿",
-    src: "/tech/okinawachoutonbo.jpg"
+    src: "/image/okinawachoutonbo.jpg"
   },
   {
     title: "スクラッチのお皿",
-    src: "/tech/youjiuo.jpg"
+    src: "/image/youjiuo.jpg"
   },
   {
     title: "花器を制作",
-    src: "/tech/ikebana.jpg"
+    src: "/image/ikebana.jpg"
   },
   {
     title: "『生長の樹』 紙 高さ170cm",
-    src: "/tech/seichounoki.jpg"
+    src: "/image/seichounoki.jpg"
   },
   {
     title: "『生長の樹』/中学の時の成長を樹で表現",
-    src: "/tech/seichounoki_2.jpg"
+    src: "/image/seichounoki_2.jpg"
   },
   {
     title: "『生長の樹』",
-    src: "/tech/seichounoki_3.jpg"
+    src: "/image/seichounoki_3.jpg"
   },
   {
     title: "『生長の樹』/中学の時の思い出を配置",
-    src: "/tech/seichounoki_4.jpg"
+    src: "/image/seichounoki_4.jpg"
   },
   {
     title: "中学の会誌の扉絵",
-    src: "/tech/hanaminokasago.jpg"
+    src: "/image/hanaminokasago.jpg"
   },
   {
     title: "林間学校のしおり",
-    src: "/tech/asagimadara.jpg"
+    src: "/image/asagimadara.jpg"
   },
   {
     title: "陶芸",
-    src: "/tech/pottery.jpg"
+    src: "/image/pottery.jpg"
   }
 ]
 
@@ -142,14 +158,14 @@ const IndexPage: React.FC = () => {
       <Accordion.Root type="multiple">
         {/* Tech */}
 
-        <Accordion.Item value="item-tech">
+        <Accordion.Item value="item-image">
           <Accordion.Trigger>Software</Accordion.Trigger>
 
           <Accordion.Content>
             {/* ErabeRule */}
             <TechWork
               title="ErabeRule"
-              imgSrc="/tech/eraberule.png"
+              imgSrc="/image/eraberule.png"
             >
               <Jump href="https://eraberule.com">eraberule.com</Jump>
               <Spacer size={5} />
@@ -166,7 +182,7 @@ const IndexPage: React.FC = () => {
             {/* @moyotsukai/bezier */}
             <TechWork
               title="@moyotsukai/bezier"
-              imgSrc="/tech/color-converter.png"
+              imgSrc="/image/color-converter.png"
             >
               <Jump href="https://www.npmjs.com/package/@moyotsukai/bezier">@moyotsukai/bezier</Jump>
               <Spacer size={5} />
@@ -183,7 +199,7 @@ const IndexPage: React.FC = () => {
             {/* LaunchHub */}
             <TechWork
               title="LaunchHub"
-              imgSrc="/tech/launchhub.png"
+              imgSrc="/image/launchhub.png"
             >
               <Jump href="https://github.com/moyotsukai/launch-hub-clone">GitHub</Jump>
               <Spacer size={5} />
@@ -199,7 +215,7 @@ const IndexPage: React.FC = () => {
             {/* 展覧会キャプション生成ツール */}
             <TechWork
               title="展覧会キャプション生成ツール"
-              imgSrc="/tech/color-converter.png"
+              imgSrc="/image/color-converter.png"
             >
               <Jump href="https://caption.moyotsukai.dev/">caption.moyotsukai.dev</Jump>
               <Spacer size={5} />
@@ -212,7 +228,7 @@ const IndexPage: React.FC = () => {
             {/* Color Converter */}
             <TechWork
               title="Color Converter"
-              imgSrc="/tech/color-converter.png"
+              imgSrc="/image/color-converter.png"
             >
               <Jump href="https://color.moyotsukai.dev">color.moyotsukai.dev</Jump>
               <Spacer size={5} />
@@ -228,7 +244,7 @@ const IndexPage: React.FC = () => {
             {/* 年賀状アプリ */}
             <TechWork
               title="年賀状アプリ"
-              imgSrc="/tech/color-converter.png"
+              imgSrc="/image/color-converter.png"
             >
               <Jump href="https://newyearscard.moyotsukai.dev/guide">newyearscard.moyotsukai.dev/guide</Jump>
             </TechWork>
@@ -237,7 +253,7 @@ const IndexPage: React.FC = () => {
             {/* 自己紹介カードジェネレータ */}
             <TechWork
               title="自己紹介カードジェネレータ"
-              imgSrc="/tech/color-converter.png"
+              imgSrc="/image/color-converter.png"
             >
               <Jump href="https://self-introduction.moyotsukai.dev/">self-introduction.moyotsukai.dev</Jump>
             </TechWork>
@@ -246,7 +262,7 @@ const IndexPage: React.FC = () => {
             {/* てんとうやホームページ */}
             <TechWork
               title="てんとうや ホームページ"
-              imgSrc="/tech/tentouya.png"
+              imgSrc="/image/tentouya.png"
             >
               <Jump href="https://tentouya.com">tentouya.com</Jump>
               <Spacer size={5} />
@@ -259,7 +275,7 @@ const IndexPage: React.FC = () => {
             {/* てんとうや */}
             <TechWork
               title="ポートフォリオサイト"
-              imgSrc="/tech/color-converter.png"
+              imgSrc="/image/color-converter.png"
             >
               <Jump href="https://www.moyotsukai.dev/">moyotsukai.dev</Jump>
               <Spacer size={5} />
@@ -270,7 +286,7 @@ const IndexPage: React.FC = () => {
             {/* ByColor */}
             <TechWork
               title="ByColor"
-              imgSrc="/tech/bycolor.png"
+              imgSrc="/image/bycolor.png"
             >
               <Jump href="https://apps.apple.com/us/app/bycolor-sort-photos-by-color/id1498754477">App Store</Jump>
               <Spacer size={5} />
@@ -283,7 +299,7 @@ const IndexPage: React.FC = () => {
             {/* CameraLayer */}
             <TechWork
               title="CameraLayer"
-              imgSrc="/tech/cameralayer.png"
+              imgSrc="/image/cameralayer.png"
             >
               <Jump href="https://apps.apple.com/us/app/cameralayer-translucent-screen/id1502882036">App Store</Jump>
               <Spacer size={5} />
@@ -304,7 +320,7 @@ const IndexPage: React.FC = () => {
             {/* もようつかい */}
             <TechWork
               title="もようつかい"
-              imgSrc="/tech/moyotsukai.png"
+              imgSrc="/image/moyotsukai.png"
             >
               <p>
                 「もようつかい」として紙で立体作品を作っています。
@@ -325,7 +341,7 @@ const IndexPage: React.FC = () => {
             {/* てんとうや */}
             <TechWork
               title="てんとうや"
-              imgSrc="/tech/tentouya.png"
+              imgSrc="/image/tentouya.png"
             >
               <Jump href="https://tentouya.com">tentouya.com</Jump>
               <Spacer size={5} />
@@ -341,7 +357,7 @@ const IndexPage: React.FC = () => {
             {/* その他 */}
             <TechWork
               title="その他 中学・高校時の作品"
-              imgSrc="/tech/moyotsukai.png"
+              imgSrc="/image/moyotsukai.png"
             >
               <p>中学生の時に制作した作品は、母校から依頼を受け永久展示されています。</p>
               <Spacer size={5} />
