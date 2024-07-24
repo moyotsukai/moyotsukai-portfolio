@@ -156,8 +156,62 @@ const IndexPage: React.FC = () => {
       <Hero />
 
       <Accordion.Root type="multiple">
-        {/* Tech */}
+        {/* Art */}
+        <Accordion.Item value="item-art">
+          <Accordion.Trigger>Art</Accordion.Trigger>
+          <Accordion.Content>
+            {/* もようつかい */}
+            <TechWork
+              title="もようつかい"
+              imgSrc="/image/moyotsukai.png"
+            >
+              <p>
+                「もようつかい」として紙で立体作品を作っています。
+                主に昆虫など生き物のペーパークラフトを開発しています。
+                「てんとうや」で販売したり、展覧会に出品したりしています。
+              </p>
+              <Spacer size={5} />
+              <Jump href="/blog">テーマについて→</Jump>
+              <Spacer size={5} />
+              <ImageGallery images={moyotsukaiImages_1} />
+              <Br style="small" />
+              <ImageGallery images={moyotsukaiImages_2} />
+              <Br style="small" />
+              <ImageGallery images={moyotsukaiImages_3} />
+            </TechWork>
+            <Br style="large" />
 
+            {/* てんとうや */}
+            <TechWork
+              title="てんとうや"
+              imgSrc="/image/tentouya.png"
+            >
+              <Jump href="https://tentouya.com">tentouya.com</Jump>
+              <Spacer size={5} />
+              <p>
+                兄弟で、昆虫のユニークなデザインを活かしたグッズを制作・販売しています。
+                ネットでの販売に加え、イベントにも出展しています。
+              </p>
+              <Spacer size={5} />
+              <ImageGallery images={tentouyaImages} />
+            </TechWork>
+            <Br style="large" />
+
+            {/* その他 */}
+            <TechWork
+              title="その他 中学・高校時の作品"
+              imgSrc="/image/moyotsukai.png"
+            >
+              <p>中学生の時に制作した作品は、母校から依頼を受け永久展示されています。</p>
+              <Spacer size={5} />
+              <ImageGallery images={highSchoolImages} />
+            </TechWork>
+          </Accordion.Content>
+        </Accordion.Item>
+
+        <Spacer size={30} />
+
+        {/* Tech */}
         <Accordion.Item value="item-image">
           <Accordion.Trigger>Software</Accordion.Trigger>
 
@@ -308,61 +362,6 @@ const IndexPage: React.FC = () => {
               <SupportingText>- Swift</SupportingText>
             </TechWork>
             <Br style="large" />
-          </Accordion.Content>
-        </Accordion.Item>
-
-        <Spacer size={30} />
-
-        {/* Art */}
-        <Accordion.Item value="item-art">
-          <Accordion.Trigger>Art</Accordion.Trigger>
-          <Accordion.Content>
-            {/* もようつかい */}
-            <TechWork
-              title="もようつかい"
-              imgSrc="/image/moyotsukai.png"
-            >
-              <p>
-                「もようつかい」として紙で立体作品を作っています。
-                主に昆虫など生き物のペーパークラフトを開発しています。
-                「てんとうや」で販売したり、展覧会に出品したりしています。
-              </p>
-              <Spacer size={5} />
-              <Jump href="/blog">テーマについて→</Jump>
-              <Spacer size={5} />
-              <ImageGallery images={moyotsukaiImages_1} />
-              <Br style="small" />
-              <ImageGallery images={moyotsukaiImages_2} />
-              <Br style="small" />
-              <ImageGallery images={moyotsukaiImages_3} />
-            </TechWork>
-            <Br style="large" />
-
-            {/* てんとうや */}
-            <TechWork
-              title="てんとうや"
-              imgSrc="/image/tentouya.png"
-            >
-              <Jump href="https://tentouya.com">tentouya.com</Jump>
-              <Spacer size={5} />
-              <p>
-                兄弟で、昆虫のユニークなデザインを活かしたグッズを制作・販売しています。
-                ネットでの販売に加え、イベントにも出展しています。
-              </p>
-              <Spacer size={5} />
-              <ImageGallery images={tentouyaImages} />
-            </TechWork>
-            <Br style="large" />
-
-            {/* その他 */}
-            <TechWork
-              title="その他 中学・高校時の作品"
-              imgSrc="/image/moyotsukai.png"
-            >
-              <p>中学生の時に制作した作品は、母校から依頼を受け永久展示されています。</p>
-              <Spacer size={5} />
-              <ImageGallery images={highSchoolImages} />
-            </TechWork>
           </Accordion.Content>
         </Accordion.Item>
 
