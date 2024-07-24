@@ -1,4 +1,4 @@
-import { css, keyframes } from '@emotion/react'
+import { css, keyframes } from "@emotion/react"
 
 const breakpoint = "420px"
 
@@ -28,7 +28,7 @@ export const triggerStyle = css`
   display: flex;
   justify-content: space-between;
 
-  @media(max-width: ${breakpoint}) {
+  @media (max-width: ${breakpoint}) {
     padding: 15px 15px;
   }
 
@@ -36,10 +36,10 @@ export const triggerStyle = css`
     cursor: pointer;
     background-color: #f7fbfc;
   }
-  &[data-state='open'] > svg {
+  &[data-state="open"] > svg {
     transform: rotate(180deg);
   }
-  &> svg {
+  & > svg {
     transition: transform 250ms cubic-bezier(0.8, 0, 0.2, 1);
   }
 `
@@ -84,16 +84,16 @@ export const contentStyle = css`
   background-color: #fff;
   overflow-wrap: break-word;
   font-size: 16px;
-  &[data-state='open'] {
+  &[data-state="open"] {
     animation: ${slideDown} 250ms cubic-bezier(0.75, 0, 0.25, 1);
   }
-  &[data-state='closed'] {
+  &[data-state="closed"] {
     animation: ${slideUp} 250ms cubic-bezier(0.25, 0, 0.75, 1);
   }
-  &[data-state='open'] > div {
+  &[data-state="open"] > div {
     animation: ${appear} 250ms cubic-bezier(0.75, 0, 0.25, 1);
   }
-  &[data-state='closed'] > div {
+  &[data-state="closed"] > div {
     animation: ${disappear} 250ms cubic-bezier(0.25, 0, 0.75, 1);
   }
 `
@@ -101,7 +101,7 @@ export const contentStyle = css`
 export const contentInsetStyle = css`
   padding: 0 25px;
 
-    @media(max-width: ${breakpoint}) {
+  @media (max-width: ${breakpoint}) {
     padding: 0 15px;
   }
 `
