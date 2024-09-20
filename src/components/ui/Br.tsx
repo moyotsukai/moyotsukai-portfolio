@@ -1,5 +1,5 @@
-import React from 'react'
-import Spacer from './Spacer'
+import React from "react"
+import Spacer from "./Spacer"
 
 type Props = {
   style?: "small" | "large"
@@ -8,13 +8,9 @@ type Props = {
 const Br: React.FC<Props> = (props) => {
   const style = props.style || "small"
   if (style === "small") {
-    return (
-      <Spacer size={15} />
-    )
+    return <Spacer size={15} />
   } else {
-    return (
-      <Spacer size={30} />
-    )
+    return <Spacer size={35} />
   }
 }
 
