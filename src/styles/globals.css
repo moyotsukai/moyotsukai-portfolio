@@ -29,7 +29,8 @@ p {
   font-size: 16px;
   font-weight: 400;
   color: #000;
-  line-height: 1.7;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
 a {

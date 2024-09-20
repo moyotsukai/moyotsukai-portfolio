@@ -5,6 +5,7 @@ import BlogTitle from "../../blog/BlogTitle"
 import ImageGallery from "../../functional/ImageGallery"
 import BackNavigation from "../../ui/BackNavigation"
 import Br from "../../ui/Br"
+import Spacer from "../../ui/Spacer"
 
 const images_1: ImageItem[] = [
   {
@@ -115,6 +116,7 @@ const EternityPage: React.FC = () => {
           『循環』『再帰』『軌道』はいずれもが時間が無限に続き、空間が無限に広がる様子を表現している。見てくれた人が外側の世界を感じてくれたなら、あるいは紙で曲面を作る面白さを感じてくれたなら嬉しく思う。
         </p>
       </BlogContainer>
+      <Spacer size={60} />
     </div>
   )
 }

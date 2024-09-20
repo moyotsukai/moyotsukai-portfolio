@@ -104,10 +104,6 @@ const tentouyaImages: ImageItem[] = [
 
 const highSchoolImages: ImageItem[] = [
   {
-    title: "生け花",
-    src: "/image/ikebana.png"
-  },
-  {
     title: "スクラッチのお皿",
     src: "/image/okinawachoutonbo.jpg"
   },
@@ -116,7 +112,11 @@ const highSchoolImages: ImageItem[] = [
     src: "/image/youjiuo.jpg"
   },
   {
-    title: "花器を制作",
+    title: "生け花",
+    src: "/image/ikebana.png"
+  },
+  {
+    title: "花器",
     src: "/image/ikebana.jpg"
   },
   {
@@ -166,13 +166,11 @@ const IndexPage: React.FC = () => {
               imgSrc="/image/moyotsukai.png"
             >
               <p>
-                「もようつかい」として紙で立体作品を作っています。
-                主に昆虫など生き物のペーパークラフトを開発しています。
-                「てんとうや」で販売したり、展覧会に出品したりしています。
+                「もようつかい」という名前で紙の立体作品を作っています。紙を曲線に沿って折ることでペーパークラフトや紙のレリーフ作品を設計しています。展覧会に出品したり、販売したりしています。
               </p>
               <Spacer size={5} />
               <Jump href="/blog">テーマについて→</Jump>
-              <Spacer size={5} />
+              <Spacer size={10} />
               <ImageGallery images={moyotsukaiImages_1} />
               <Br style="small" />
               <ImageGallery images={moyotsukaiImages_2} />
@@ -189,8 +187,7 @@ const IndexPage: React.FC = () => {
               <Jump href="https://tentouya.com">tentouya.com</Jump>
               <Spacer size={5} />
               <p>
-                兄弟で、昆虫のユニークなデザインを活かしたグッズを制作・販売しています。
-                ネットでの販売に加え、イベントにも出展しています。
+                兄弟で、昆虫のユニークなデザインを活かしたグッズを制作・販売しています。ネットでの販売に加え、イベントにも出展しています。
               </p>
               <Spacer size={5} />
               <ImageGallery images={tentouyaImages} />
@@ -429,10 +426,11 @@ const IndexPage: React.FC = () => {
 
             <SupportingText>関心</SupportingText>
             <div>
-              <p>経済学(社会的選択理論等)</p>
-              <p>デザイン(UIデザイン, Webデザイン, タイポグラフィ)</p>
-              <p>アート(ペーパークラフト開発, 生け花)</p>
-              <p>プログラミング(Webフロントエンド, iOSアプリ)</p>
+              <p>経済学（社会的選択理論など）</p>
+              <p>デザイン（UIデザイン, Webデザイン）</p>
+              <p>アート（ペーパークラフト開発, 絵画）</p>
+              <p>プログラミング（Webフロントエンド, iOSアプリ）</p>
+              <p>アニメ</p>
             </div>
             <Br />
 
@@ -446,13 +444,12 @@ const IndexPage: React.FC = () => {
 
             <div>
               <p>2003年生まれ</p>
-              <p>2022- Life is Tech ! iPhoneメンター</p>
             </div>
           </Accordion.Content>
         </Accordion.Item>
       </Accordion.Root>
 
-      <Spacer size={30} />
+      <Spacer size={60} />
     </div>
   )
 }
