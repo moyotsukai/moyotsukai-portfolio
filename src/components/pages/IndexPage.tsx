@@ -12,29 +12,6 @@ import Accordion from "../ui/Accordion"
 
 const moyotsukaiImages_1: ImageItem[] = [
   {
-    title: "『紙によるセザンヌ的キュビスム』 紙 31cm×38cm",
-    src: "/image/cubism_1_1.jpg"
-  },
-  {
-    title: "",
-    src: "/image/cubism_1_2.jpg"
-  },
-  {
-    title: "『紙によるセザンヌ的キュビスム』 紙 31cm×38cm",
-    src: "/image/cubism_2_1.jpg"
-  },
-  {
-    title: "",
-    src: "/image/cubism_2_2.jpg"
-  },
-  {
-    title: "『穏やかさの形』 紙 38cm×60cm",
-    src: "/image/seahorse.jpg"
-  }
-]
-
-const moyotsukaiImages_2: ImageItem[] = [
-  {
     title: "『循環』 紙 140cm×140cm",
     src: "/image/cycle.jpeg"
   },
@@ -61,6 +38,37 @@ const moyotsukaiImages_2: ImageItem[] = [
   {
     title: "『再帰』 紙 140cm×140cm",
     src: "/image/reccurence.png"
+  }
+]
+
+const moyotsukaiImages_2: ImageItem[] = [
+  {
+    title: "『紙によるセザンヌ的キュビスム』 紙 45cm×60cm",
+    src: "/image/cubism_3_1.jpg"
+  },
+  {
+    title: "",
+    src: "/image/cubism_3_2.jpg"
+  },
+  {
+    title: "『紙によるセザンヌ的キュビスム』 紙 31cm×38cm",
+    src: "/image/cubism_1_1.jpg"
+  },
+  {
+    title: "",
+    src: "/image/cubism_1_2.jpg"
+  },
+  {
+    title: "『紙によるセザンヌ的キュビスム』 紙 31cm×38cm",
+    src: "/image/cubism_2_1.jpg"
+  },
+  {
+    title: "",
+    src: "/image/cubism_2_2.jpg"
+  },
+  {
+    title: "『穏やかさの形』 紙 38cm×60cm",
+    src: "/image/seahorse.jpg"
   }
 ]
 
@@ -166,7 +174,7 @@ const IndexPage: React.FC = () => {
               imgSrc="/image/moyotsukai.png"
             >
               <p>
-                「もようつかい」という名前で紙の立体作品を作っています。紙を曲線に沿って折ることでペーパークラフトや紙のレリーフ作品を設計しています。展覧会に出品したり、販売したりしています。
+                「もようつかい」という名前で紙の立体作品を作っています。紙を曲線に沿って折ることでペーパークラフトなどを設計しています。展覧会に出品したり、販売したりしています。
               </p>
               <Spacer size={5} />
               <Jump href="/blog">テーマについて→</Jump>
@@ -187,7 +195,7 @@ const IndexPage: React.FC = () => {
               <Jump href="https://tentouya.com">tentouya.com</Jump>
               <Spacer size={5} />
               <p>
-                兄弟で、昆虫のユニークなデザインを活かしたグッズを制作・販売しています。ネットでの販売に加え、イベントにも出展しています。
+                兄弟で昆虫のユニークなデザインを活かしたグッズを制作・販売しています。ネットでの販売に加え、イベントにも出展しています。
               </p>
               <Spacer size={5} />
               <ImageGallery images={tentouyaImages} />
@@ -426,7 +434,7 @@ const IndexPage: React.FC = () => {
 
             <SupportingText>関心</SupportingText>
             <div>
-              <p>経済学（社会的選択理論など）</p>
+              <p>ミクロ経済学（社会的選択理論など）</p>
               <p>デザイン（UIデザイン, Webデザイン）</p>
               <p>アート（ペーパークラフト開発, 絵画）</p>
               <p>プログラミング（Webフロントエンド, iOSアプリ）</p>
